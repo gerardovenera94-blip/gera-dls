@@ -5,7 +5,7 @@
 Configura estas variables para los entornos que vayas a desplegar:
 
 - `SUPABASE_URL`: la URL del proyecto Supabase.
-- `SUPABASE_PUBLISHABLE_KEY`: la clave publicable `sb_publishable_...` del proyecto.
+- `SUPABASE_PUBLISHABLE_KEY`: la clave publicable `sb_publishable_...` del proyecto. También se admite el nombre `SUPABASE_PUBLIC_KEY` ya configurado en Vercel.
 
 La clave publicable puede llegar al navegador y está protegida por las políticas RLS de Supabase. No configures ni utilices claves `sb_secret_...` o `service_role` en Vercel para esta web.
 
