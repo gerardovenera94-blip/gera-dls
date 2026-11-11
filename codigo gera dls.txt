@@ -1,0 +1,2625 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SERIE A DLS CHAMPIONSHIP | Official eSports Tournament</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-container": "#ff9594",
+            "error-container": "#93000a",
+            "surface-container-lowest": "#0b0e14",
+            "on-primary": "#3c2f00",
+            "surface-container-low": "#191c22",
+            "inverse-primary": "#735c00",
+            "surface-dim": "#10131a",
+            "on-secondary-fixed-variant": "#00458d",
+            "on-primary-fixed": "#241a00",
+            "outline-variant": "#4d4635",
+            "primary": "#f2ca50",
+            "secondary-fixed-dim": "#aac7ff",
+            "on-background": "#e1e2eb",
+            "inverse-on-surface": "#2e3037",
+            "on-secondary-container": "#9dc0ff",
+            "on-tertiary-fixed-variant": "#92001c",
+            "primary-fixed": "#ffe088",
+            "on-tertiary-fixed": "#410007",
+            "on-error-container": "#ffdad6",
+            "inverse-surface": "#e1e2eb",
+            "surface-variant": "#32353c",
+            "on-surface": "#e1e2eb",
+            "on-secondary-fixed": "#001b3e",
+            "secondary-fixed": "#d6e3ff",
+            "error": "#ffb4ab",
+            "secondary-container": "#014c99",
+            "on-tertiary": "#680011",
+            "surface-container-high": "#272a31",
+            "primary-container": "#d4af37",
+            "surface": "#10131a",
+            "outline": "#99907c",
+            "on-primary-container": "#554300",
+            "on-error": "#690005",
+            "surface-container-highest": "#32353c",
+            "tertiary-fixed": "#ffdad8",
+            "tertiary": "#ffbebc",
+            "on-surface-variant": "#d0c5af",
+            "tertiary-fixed-dim": "#ffb3b1",
+            "primary-fixed-dim": "#e9c349",
+            "surface-bright": "#363940",
+            "on-secondary": "#002f64",
+            "secondary": "#aac7ff",
+            "surface-container": "#1d2026",
+            "surface-tint": "#e9c349",
+            "on-tertiary-container": "#8f001c",
+            "on-primary-fixed-variant": "#574500",
+            "background": "#10131a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "gutter-mobile": "0.75rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Syne"],
+            "label-micro": ["Space Grotesk"],
+            "label-ticker": ["Space Grotesk"],
+            "headline-xl-mobile": ["Syne"],
+            "title-md": ["Manrope"],
+            "headline-lg-mobile": ["Syne"],
+            "label-data": ["Space Grotesk"],
+            "title-sm": ["Manrope"],
+            "display-hero-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-sm": ["Manrope"],
+            "headline-lg": ["Syne"],
+            "body-lg": ["Manrope"],
+            "body-md": ["Manrope"],
+            "display-hero": ["Syne"]
+          },
+          "fontSize": {
+            "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "label-micro": ["10px", {"lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "label-ticker": ["13px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+            "headline-xl-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+            "title-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+            "headline-lg-mobile": ["24px", {"lineHeight": "30px", "fontWeight": "700"}],
+            "label-data": ["12px", {"lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500"}],
+            "title-sm": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+            "headline-md": ["22px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+            "headline-lg": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+            "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #0b0e14;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #32353c;
+      border-radius: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: #d4af37;
+    }
+    .stadium-overlay {
+      background: radial-gradient(circle at 50% 0%, rgba(1, 76, 153, 0.22) 0%, rgba(11, 14, 20, 0.95) 75%),
+                  linear-gradient(180deg, rgba(200, 16, 46, 0.08) 0%, transparent 40%);
+    }
+    @keyframes goldGlow {
+      0% { box-shadow: 0 0 0px rgba(242, 202, 80, 0); background-color: rgba(242, 202, 80, 0.25); }
+      50% { box-shadow: 0 0 25px rgba(242, 202, 80, 0.45); background-color: rgba(242, 202, 80, 0.15); }
+      100% { box-shadow: 0 0 0px rgba(242, 202, 80, 0); }
+    }
+    .just-reserved {
+      animation: goldGlow 2.5s ease-out;
+    }
+    @keyframes toastSlide {
+      from { transform: translateY(100%) scale(0.9); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    .animate-toast {
+      animation: toastSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body-md antialiased selection:bg-primary selection:text-surface-container-lowest overflow-x-hidden min-h-screen flex flex-col">
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 pointer-events-none" id="toastContainer"></div>
+<!-- TopNavBar -->
+<header class="w-full bg-surface-container-lowest sticky top-0 z-50 shadow-2xl shadow-surface-container-lowest/80 border-b border-outline-variant/30">
+<div class="w-full px-6 md:px-12 flex justify-between items-center h-20 max-w-7xl mx-auto">
+<!-- Brand & Scudetto Badge -->
+<div class="flex items-center gap-4">
+<!-- Italian Tricolore Pill Ribbon -->
+<div class="flex flex-col h-7 w-1.5 rounded-full overflow-hidden shadow-sm">
+<span class="h-1/3 bg-[#009246]"></span>
+<span class="h-1/3 bg-white"></span>
+<span class="h-1/3 bg-[#ce2b37]"></span>
+</div>
+<!-- Trophy Scudetto Icon -->
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center border border-primary/40 shadow-inner">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">trophy</span>
+</div>
+<div><a class="text-headline-md font-headline-md font-bold tracking-wider text-primary uppercase flex items-center gap-2" href="#">SERIE A DE GERA DLS</a><span class="text-label-micro font-label-micro text-outline tracking-widest block uppercase">OFFICIAL DLS LEAGUE • HOSTED BY GERA DLS</span></div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-primary border-b-2 border-primary pb-1 font-bold uppercase tracking-wider text-label-ticker font-label-ticker" href="#selection-hub">Selección y Ledger</a>
+<a class="text-on-surface-variant hover:text-on-surface pb-1 uppercase tracking-wider text-label-ticker font-label-ticker transition-colors duration-150" href="#prizepool">Prize Vault</a>
+<a class="text-on-surface-variant hover:text-on-surface pb-1 uppercase tracking-wider text-label-ticker font-label-ticker transition-colors duration-150" href="#regulations">Regulations</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-all duration-150 relative">
+<span class="material-symbols-outlined text-xl">notifications</span>
+<span class="w-2 h-2 rounded-full bg-primary absolute top-2 right-2 animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-primary absolute top-2 right-2"></span>
+</button>
+<a class="bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest px-5 py-2.5 rounded-lg text-label-ticker font-label-ticker uppercase tracking-wider font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-95 duration-100 ease-out flex items-center gap-1.5 transition-all" href="#selection-hub">
+<span class="material-symbols-outlined text-sm font-bold">shield_person</span>
+          Elegir Club
+</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden border-b border-outline-variant/30 stadium-overlay pt-12 pb-20">
+<!-- Atmospheric Stadium Light Beams -->
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -top-24 right-1/4 w-[32rem] h-[32rem] bg-secondary-container/25 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+<!-- Season Meta Pill -->
+<div class="flex items-center gap-2 mb-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container border border-primary/30 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-label-micro font-label-micro text-primary uppercase tracking-widest font-bold">🏆 TORNEO OFICIAL GERA DLS • TEMPORADA 2025/26</span>
+</div>
+<div class="hidden sm:inline-flex items-center gap-1 text-label-micro font-label-micro px-2.5 py-1 rounded bg-surface-container-high/60 text-secondary border border-secondary/20">
+<span class="material-symbols-outlined text-xs">verified</span> DLS VERIFIED COMPETITIVE
+</div>
+</div>
+<!-- Main Headline & Editorial Copy -->
+<div class="max-w-4xl">
+<h1 class="text-display-hero font-display-hero text-on-surface tracking-tight uppercase mb-4 leading-tight">SERIE A DE <span class="text-primary italic">GERA DLS</span></h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-8">Comanda las dinastías del fútbol italiano en el torneo oficial organizado por Gera DLS. Selecciona tu club en tiempo real, ingresa tu nombre de mánager DLS y asegura tu lugar en la gloria por el Scudetto y la bolsa de €15,000.</p>
+</div>
+<!-- Quick Stat Telemetry HUD (Synced dynamically) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-lg bg-surface-container-low/90 border border-outline-variant/40 backdrop-blur-md mb-8 max-w-4xl shadow-xl">
+<div class="flex flex-col border-r border-outline-variant/30 pr-4">
+<span class="text-label-micro font-label-micro uppercase tracking-wider text-outline">Teams Field</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-headline-lg font-headline-lg text-on-surface">20</span>
+<span class="text-label-ticker font-label-ticker text-primary">Serie A Clubs</span>
+</div>
+</div>
+<div class="flex flex-col border-r border-outline-variant/30 pr-4 pl-2">
+<span class="text-label-micro font-label-micro uppercase tracking-wider text-outline">Prize Purse</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-headline-lg font-headline-lg text-primary">€15,000</span>
+<span class="text-label-ticker font-label-ticker text-outline">Cash Pool</span>
+</div>
+</div>
+<div class="flex flex-col border-r border-outline-variant/30 pr-4 pl-2">
+<span class="text-label-micro font-label-micro uppercase tracking-wider text-outline">Rounds &amp; Matches</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-headline-lg font-headline-lg text-on-surface">380</span>
+<span class="text-label-ticker font-label-ticker text-secondary">38 Fixtures</span>
+</div>
+</div>
+<div class="flex flex-col pl-2">
+<span class="text-label-micro font-label-micro uppercase tracking-wider text-outline">Registration Quota</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="text-headline-lg font-headline-lg text-primary-fixed" id="heroQuotaDisplay">0<span class="text-outline text-headline-md font-headline-md font-normal">/20</span></span>
+<span class="text-label-ticker font-label-ticker text-tertiary-container animate-pulse" id="heroSpotsDisplay">20 Libres</span>
+</div>
+</div>
+</div>
+<!-- Dual CTA & Countdown Ribbon -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-6 max-w-4xl">
+<div class="flex items-center gap-4">
+<a class="bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest px-7 py-3.5 rounded-lg text-label-ticker font-label-ticker uppercase tracking-wider font-bold shadow-lg shadow-primary/25 active:scale-95 transition-all flex items-center gap-2" href="#selection-hub">
+<span class="material-symbols-outlined text-lg">flag</span>
+            Elegir Club Libre
+          </a>
+<a class="bg-surface-container hover:bg-surface-container-high text-on-surface px-6 py-3.5 rounded-lg text-label-ticker font-label-ticker uppercase tracking-wider border border-outline-variant hover:border-primary transition-all flex items-center gap-2" href="#prizepool">
+<span class="material-symbols-outlined text-lg text-primary">description</span>
+            Ver Premios y Reglas
+          </a>
+</div>
+<!-- Kickoff Countdown -->
+<div class="flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-container-lowest border border-primary/30">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">timer</span>
+<div>
+<span class="text-label-micro font-label-micro text-outline uppercase block tracking-wider">Tournament Kickoff In:</span>
+<span class="text-label-ticker font-label-ticker text-primary tracking-widest font-mono">06d 14h 28m 42s</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MAIN TOURNAMENT HUB: DYNAMIC 2-COLUMN SPLIT -->
+<main class="w-full max-w-7xl mx-auto px-6 md:px-12 py-12 flex-1" id="selection-hub">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- COLUMNA IZQUIERDA: EQUIPOS DISPONIBLES / LIBRES (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Header de Columna Izquierda con Contador Dinámico -->
+<div class="p-5 rounded-lg bg-surface-container-low border border-primary/40 shadow-xl backdrop-blur-md flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping"></span>
+<h2 class="text-headline-md font-headline-md text-on-surface uppercase tracking-wide flex items-center gap-2">
+          EQUIPOS DISPONIBLES 
+          <span class="text-primary font-mono text-title-md bg-surface-container-lowest px-3 py-1 rounded border border-primary/40" id="availableCounterBadge">(20 Libres)</span>
+</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Haz clic en un equipo para ingresar tu mánager y bloquearlo de inmediato</p>
+</div>
+<!-- Buscador en tiempo real de equipos libres -->
+<div class="relative w-full md:w-56 shrink-0">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-lg">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface border border-outline-variant/40 rounded px-3 py-2 pl-9 text-body-sm font-body-sm placeholder:text-outline/70 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="availableSearchInput" placeholder="Filtrar disponibles..." type="text">
+</div>
+</div>
+<!-- Contenedor dinámico de tarjetas libres -->
+<div class="space-y-3 custom-scroll max-h-[960px] overflow-y-auto pr-1" id="availableTeamsList">
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('juventus')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <defs>
+        <filter id="j-glow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.5"></feDropShadow>
+        </filter>
+      </defs>
+      <!-- Base Shield -->
+      <path d="M16 10 h68 c0 54 -16 88 -34 102 c-18 -14 -34 -48 -34 -102 Z" fill="#0b0e14" stroke="#d4af37" stroke-width="2.5"></path>
+      <!-- Tre Stelle Dorate -->
+      <g fill="#f2ca50">
+        <polygon points="34,16 35.5,20.5 40,21 36.8,24 37.8,28.5 34,26 30.2,28.5 31.2,24 28,21 32.5,20.5"></polygon>
+        <polygon points="50,14 51.5,18.5 56,19 52.8,22 53.8,26.5 50,24 46.2,26.5 47.2,22 44,19 48.5,18.5"></polygon>
+        <polygon points="66,16 67.5,20.5 72,21 68.8,24 69.8,28.5 66,26 62.2,28.5 63.2,24 60,21 64.5,20.5"></polygon>
+      </g>
+      <!-- Iconic Double J Modern Vector -->
+      <path d="M34 33 h12 v40 c0 6 -4 10 -10 10 h-7 c-3.5 0 -6 -2.5 -6 -6 c0 -4 3 -7 7 -7 h3 c2 0 3 -1 3 -3 Z" fill="#ffffff" filter="url(#j-glow)"></path>
+      <path d="M56 33 h12 v44 c0 11 -8 20 -20 20 h-5 c-4.5 0 -8 -3.5 -8 -8 c0 -4.5 3.5 -8 8 -8 h3 c5.5 0 10 -4.5 10 -10 Z" fill="#ffffff" filter="url(#j-glow)"></path>
+      <text x="50" y="108" fill="#d4af37" font-size="6.5" font-family="'Space Grotesk', sans-serif" font-weight="700" letter-spacing="2" text-anchor="middle">JUVENTUS</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Juventus FC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER S</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Bianconeri</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">86 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('inter')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculos concéntricos oficiales -->
+      <circle cx="50" cy="50" r="48" fill="#00183b"></circle>
+      <circle cx="50" cy="50" r="43" fill="#0066cc"></circle>
+      <circle cx="50" cy="50" r="39" fill="#001124"></circle>
+      <circle cx="50" cy="50" r="35" fill="none" stroke="#ffe088" stroke-width="1.8"></circle>
+      <circle cx="50" cy="50" r="28" fill="#001d4a"></circle>
+      <!-- Entrelazado I & M -->
+      <path d="M48 24 h4 v52 h-4 Z" fill="#ffe088"></path>
+      <path d="M31 35 h5.5 l13.5 24 l13.5 -24 h5.5 v30 h-5 v-19.5 l-11.5 20.5 h-5 l-11.5 -20.5 v19.5 h-5 Z" fill="#ffffff"></path>
+      <!-- Aros internos de contraste -->
+      <circle cx="50" cy="50" r="22" fill="none" stroke="#ffe088" stroke-width="1.2" stroke-dasharray="3 2"></circle>
+      <circle cx="50" cy="50" r="46.5" fill="none" stroke="#ffe088" stroke-width="1"></circle>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Inter Milan</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER S</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Nerazzurri</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">86 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('milan')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 90 120" class="w-full h-full drop-shadow">
+      <!-- Stella d'Oro -->
+      <polygon points="45,4 47.5,11.5 55,12 49.5,17 51,24.5 45,20.5 39,24.5 40.5,17 35,12 42.5,11.5" fill="#f2ca50"></polygon>
+      <!-- Oval Border -->
+      <ellipse cx="45" cy="68" rx="39" ry="50" fill="#ffffff" stroke="#000000" stroke-width="2.5"></ellipse>
+      <ellipse cx="45" cy="68" rx="36" ry="47" fill="none" stroke="#d4af37" stroke-width="1.5"></ellipse>
+      <!-- Header Banner ACM -->
+      <rect x="18" y="27" width="54" height="15" rx="3" fill="#E30613"></rect>
+      <text x="45" y="38" fill="#ffffff" font-size="10" font-weight="900" font-family="'Space Grotesk', sans-serif" text-anchor="middle" letter-spacing="2">ACM</text>
+      <!-- Split Body: Left Rossonero Stripes / Right St. George Cross -->
+      <g>
+        <clipPath id="milan-inner">
+          <ellipse cx="45" cy="72" rx="27" ry="32"></ellipse>
+        </clipPath>
+        <g clip-path="url(#milan-inner)">
+          <!-- Fondos -->
+          <rect x="18" y="40" width="27" height="64" fill="#000000"></rect>
+          <rect x="45" y="40" width="27" height="64" fill="#ffffff"></rect>
+          <!-- Rayas rojas izquierda -->
+          <rect x="22" y="40" width="5" height="64" fill="#E30613"></rect>
+          <rect x="32" y="40" width="5" height="64" fill="#E30613"></rect>
+          <rect x="41" y="40" width="4" height="64" fill="#E30613"></rect>
+          <!-- Cruz de San Jorge derecha -->
+          <rect x="45" y="68" width="27" height="8" fill="#E30613"></rect>
+          <rect x="54.5" y="40" width="8" height="64" fill="#E30613"></rect>
+        </g>
+        <!-- Marco interior oval -->
+        <ellipse cx="45" cy="72" rx="27" ry="32" fill="none" stroke="#000000" stroke-width="2"></ellipse>
+      </g>
+      <!-- Footer 1899 -->
+      <rect x="28" y="102" width="34" height="11" fill="#000000" rx="3"></rect>
+      <text x="45" y="110" fill="#ffe088" font-size="7.5" font-weight="800" font-family="'Space Grotesk', sans-serif" text-anchor="middle" letter-spacing="1">1899</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">AC Milan</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER S</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Rossoneri</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">85 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('napoli')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <defs>
+        <radialGradient id="napoli-radial" cx="40%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#38bdf8"></stop>
+          <stop offset="55%" stop-color="#0066cc"></stop>
+          <stop offset="100%" stop-color="#003366"></stop>
+        </radialGradient>
+        <linearGradient id="n-bevel-left" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff"></stop>
+          <stop offset="100%" stop-color="#cbd5e1"></stop>
+        </linearGradient>
+        <linearGradient id="n-bevel-right" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#93c5fd"></stop>
+          <stop offset="100%" stop-color="#1d4ed8"></stop>
+        </linearGradient>
+      </defs>
+      <!-- Aro exterior -->
+      <circle cx="50" cy="50" r="48" fill="#002b49" stroke="#38bdf8" stroke-width="2"></circle>
+      <circle cx="50" cy="50" r="44" fill="url(#napoli-radial)"></circle>
+      <circle cx="50" cy="50" r="41" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.85"></circle>
+      <circle cx="50" cy="50" r="32" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"></circle>
+      <!-- N 3D Bevel Oficial -->
+      <g transform="translate(1, 0)">
+        <!-- Columna Izquierda N -->
+        <polygon points="34,27 43,27 43,73 34,73" fill="url(#n-bevel-left)"></polygon>
+        <!-- Diagonal 3D de la N -->
+        <polygon points="42,27 44,27 63,68 63,73 53,73 34,32 34,27" fill="#ffffff"></polygon>
+        <!-- Sombra diagonal -->
+        <polygon points="43,27 46,27 63,65 63,73 59,73" fill="url(#n-bevel-right)"></polygon>
+        <!-- Columna Derecha N -->
+        <polygon points="56,27 65,27 65,73 56,73" fill="url(#n-bevel-left)"></polygon>
+      </g>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">SSC Napoli</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER S</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Azzurri</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">85 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('roma')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor -->
+      <path d="M15 15 h70 c0 55 -18 90 -35 102 c-17 -12 -35 -47 -35 -102 Z" fill="#8E1F2F" stroke="#ffe088" stroke-width="2.5"></path>
+      <!-- Mitad inferior ocre/dorada Roma -->
+      <path d="M16 62 h68 c-3 26 -17 44 -34 52 c-17 -8 -31 -26 -34 -52 Z" fill="#F0BC42"></path>
+      <!-- Línea divisoria elegante -->
+      <line x1="16" y1="62" x2="84" y2="62" stroke="#8E1F2F" stroke-width="1.5"></line>
+      <!-- Loba Capitolina Silhouette Detallada -->
+      <g fill="#F0BC42" transform="translate(4, -2)">
+        <!-- Cabeza y hocico -->
+        <path d="M28 42 c-2 -2 -5 -2 -7 -4 c-1 -1 -1 -3 1 -3 c3 0 5 2 7 3 c2 -3 4 -5 8 -5 c3 0 4 2 5 4 c2 0 4 -1 7 0 c5 1 12 1 18 6 c3 3 5 7 5 11 c0 4 -2 7 -4 9 c-2 2 -4 1 -4 -1 c0 -2 2 -4 2 -6 c0 -4 -3 -7 -8 -8 c-6 -1 -11 0 -15 2 c-3 2 -5 5 -8 5 c-2 0 -4 -1 -5 -3 c-1 -2 0 -3 2 -4 c1 -1 3 -1 4 -1 Z"></path>
+        <!-- Patas de la Loba -->
+        <rect x="27" y="47" width="3.5" height="13" rx="1.5"></rect>
+        <rect x="36" y="47" width="3.5" height="13" rx="1.5"></rect>
+        <rect x="58" y="46" width="3.5" height="14" rx="1.5"></rect>
+        <rect x="66" y="45" width="3.5" height="15" rx="1.5"></rect>
+        <!-- Rómulo y Remo gemelos -->
+        <circle cx="45" cy="56" r="2.2" fill="#ffe088"></circle>
+        <path d="M43 58 h4 v3 h-4 Z"></path>
+        <circle cx="51" cy="56" r="2.2" fill="#ffe088"></circle>
+        <path d="M49 58 h4 v3 h-4 Z"></path>
+      </g>
+      <!-- Texto ROMA y 1927 en rojo imperial -->
+      <text x="50" y="83" fill="#8E1F2F" font-size="14" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="2" text-anchor="middle">ROMA</text>
+      <text x="50" y="99" fill="#8E1F2F" font-size="9" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">1927</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">AS Roma</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER A</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Giallorossi</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">83 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('lazio')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Águila Imperial Olimpia Dorada con alas desplegadas -->
+      <path d="M50 10 c12 6 25 3 40 -3 c-6 10 -15 16 -24 19 c15 0 26 6 34 14 c-13 2 -24 -1 -34 -6 c9 7 13 14 11 20 c-7 -4 -15 -9 -21 -16 c2 6 2 12 0 16 c-4 -7 -8 -14 -8 -20 c0 6 -4 13 -8 20 c-2 -4 -2 -10 0 -16 c-6 7 -14 12 -21 16 c-2 -6 2 -13 11 -20 c-10 5 -21 8 -34 6 c8 -8 19 -14 34 -14 c-9 -3 -18 -9 -24 -19 c15 6 28 9 40 3 Z" fill="#ffe088" stroke="#d4af37" stroke-width="1.2"></path>
+      <polygon points="50,18 47,24 53,24" fill="#d4af37"></polygon>
+      <!-- Escudo Colgante -->
+      <path d="M26 48 h48 c0 36 -14 56 -24 62 c-10 -6 -24 -26 -24 -62 Z" fill="#ffffff" stroke="#002b49" stroke-width="2.5"></path>
+      <!-- Rayas Celestes Lazio -->
+      <path d="M38 50 h7 v54 c-2.5 -4 -5 -8 -7 -13 Z" fill="#87CEEB"></path>
+      <path d="M55 50 h7 v41 c-2 5 -4.5 9 -7 13 Z" fill="#87CEEB"></path>
+      <!-- Cinta Marina 'S.S. LAZIO' -->
+      <rect x="28" y="48" width="44" height="13" fill="#002b49"></rect>
+      <text x="50" y="58" fill="#ffffff" font-size="7.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">S.S. LAZIO</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">SS Lazio</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER A</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Biancocelesti</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">82 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('atalanta')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 95 120" class="w-full h-full drop-shadow">
+      <!-- Oval Shield Base -->
+      <ellipse cx="47.5" cy="62" rx="42" ry="54" fill="#000000" stroke="#ffe088" stroke-width="2.5"></ellipse>
+      <!-- Mitad Derecha Azul Royal -->
+      <path d="M47.5 8 A42 54 0 0 1 47.5 116 Z" fill="#0055b3"></path>
+      <ellipse cx="47.5" cy="62" rx="38" ry="50" fill="none" stroke="#ffe088" stroke-width="1.2"></ellipse>
+      <!-- Nombre Superior -->
+      <text x="47.5" y="27" fill="#ffe088" font-size="9" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="1.5" text-anchor="middle">ATALANTA</text>
+      <!-- Perfil Vectorial de la Heroína Atalanta en Dorado -->
+      <g fill="#ffe088" transform="translate(3, 4)">
+        <!-- Cara y cuello -->
+        <path d="M36 50 c2 -5 7 -8 11 -7 c2 1 3 3 2 5 c-2 2 -4 4 -4 7 c3 2 6 2 8 0 c1 3 -1 6 -4 8 c-3 2 -6 4 -8 7 c-2 3 -3 7 -3 10 h-7 c0 -6 2 -11 5 -15 c1 -2 2 -4 1 -6 c-1 -3 -3 -6 -4 -9 Z"></path>
+        <!-- Cabello al viento desplegado a la izquierda -->
+        <path d="M22 46 c8 -4 17 -3 22 2 c-5 4 -12 5 -19 4 c-2 0 -3 -3 -3 -6 Z"></path>
+        <path d="M20 54 c9 -3 18 -1 22 4 c-6 3 -14 3 -20 0 c-2 -1 -3 -3 -2 -4 Z"></path>
+        <path d="M19 63 c8 -2 16 0 20 6 c-6 2 -13 1 -18 -2 c-2 -2 -3 -3 -2 -4 Z"></path>
+        <path d="M21 72 c7 -1 14 2 17 8 c-5 1 -11 -1 -15 -4 c-2 -2 -3 -3 -2 -4 Z"></path>
+      </g>
+      <!-- Año 1907 -->
+      <text x="47.5" y="104" fill="#ffe088" font-size="9" font-weight="800" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1907</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Atalanta BC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER A</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Nerazzurri Orobici</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">83 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('fiorentina')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 110" class="w-full h-full drop-shadow">
+      <!-- Rombo Exterior Violeta Viola -->
+      <polygon points="50,4 94,55 50,106 6,55" fill="#4C12A1" stroke="#ffffff" stroke-width="2.5"></polygon>
+      <polygon points="50,11 86,55 50,99 14,55" fill="#3B0764" stroke="#d4af37" stroke-width="1.5"></polygon>
+      <!-- V de Viola en la parte inferior -->
+      <path d="M50 88 L74 48 L65 48 L50 72 L35 48 L26 48 Z" fill="#ffffff"></path>
+      <!-- Giglio Rosso de Firenze (Lirio Rojo Florentino) -->
+      <g transform="translate(50, 36) scale(0.68)" fill="#E30613">
+        <!-- Pétalo Central -->
+        <path d="M0 -22 C-5 -14 -4 -3 0 6 C4 -3 5 -14 0 -22 Z"></path>
+        <!-- Estambres centrales -->
+        <circle cx="-3" cy="-14" r="1.5"></circle>
+        <circle cx="3" cy="-14" r="1.5"></circle>
+        <!-- Pétalos Laterales Desplegados -->
+        <path d="M0 -3 C-7 -10 -18 -10 -20 -1 C-22 9 -12 12 -4 4 Z"></path>
+        <path d="M0 -3 C7 -10 18 -10 20 -1 C22 9 12 12 4 4 Z"></path>
+        <!-- Hojas inferiores del Lirio -->
+        <path d="M-3 6 C-9 8 -13 14 -11 20 C-9 22 -6 18 -3 14 Z"></path>
+        <path d="M3 6 C9 8 13 14 11 20 C9 22 6 18 3 14 Z"></path>
+        <!-- Base de la flor -->
+        <rect x="-4" y="5" width="8" height="4" rx="1"></rect>
+      </g>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">ACF Fiorentina</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER A</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Viola</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">81 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('bologna')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 95 120" class="w-full h-full drop-shadow">
+      <!-- Oval Base -->
+      <ellipse cx="47.5" cy="62" rx="42" ry="54" fill="#ffffff" stroke="#002B49" stroke-width="2.5"></ellipse>
+      <ellipse cx="47.5" cy="62" rx="38" ry="50" fill="#ffffff" stroke="#ffe088" stroke-width="1.5"></ellipse>
+      <!-- Cabecera Azul Marina con BFC 1909 -->
+      <path d="M12 40 C16 22 30 14 47.5 14 C65 14 79 22 83 40 Z" fill="#002B49"></path>
+      <text x="47.5" y="32" fill="#ffe088" font-size="10.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">BFC 1909</text>
+      <!-- Cuadrantes Inferiores divididos -->
+      <g>
+        <clipPath id="bologna-body">
+          <path d="M12 40 h71 c2 10 3 20 3 24 c0 28 -16 48 -38.5 48 c-22.5 0 -38.5 -20 -38.5 -48 c0 -4 1 -14 3 -24 Z"></path>
+        </clipPath>
+        <g clip-path="url(#bologna-body)">
+          <!-- Rayas Rossoblu -->
+          <rect x="10" y="40" width="19" height="75" fill="#002B49"></rect>
+          <rect x="29" y="40" width="19" height="75" fill="#C8102E"></rect>
+          <!-- Cuadrante Cruz Roja sobre blanco de Bolonia -->
+          <rect x="48" y="40" width="40" height="75" fill="#ffffff"></rect>
+          <rect x="48" y="60" width="40" height="10" fill="#C8102E"></rect>
+          <rect x="63" y="40" width="10" height="75" fill="#C8102E"></rect>
+        </g>
+      </g>
+      <!-- Contorno divisorio central -->
+      <line x1="48" y1="40" x2="48" y2="112" stroke="#ffe088" stroke-width="1.5"></line>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Bologna FC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER A</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Rossoblu</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">80 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('torino')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Shield Shape Granata -->
+      <path d="M18 12 h64 c0 54 -16 88 -32 100 c-16 -12 -32 -46 -32 -100 Z" fill="#8A1538" stroke="#ffe088" stroke-width="2.5"></path>
+      <path d="M22 16 h56 c0 48 -14 80 -28 91 c-14 -11 -28 -43 -28 -91 Z" fill="none" stroke="#ffe088" stroke-width="1.2"></path>
+      <!-- Header Banner 'TORINO' -->
+      <rect x="25" y="22" width="50" height="15" fill="#000000" rx="2" opacity="0.4"></rect>
+      <text x="50" y="33" fill="#ffffff" font-size="10" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="1.5" text-anchor="middle">TORINO</text>
+      <!-- Toro Rampante Fiel -->
+      <g fill="#ffe088" transform="translate(18, 35)">
+        <!-- Cabeza y cuernos del toro en embestida -->
+        <path d="M32 14 c2 -2 5 -4 7 -3 c1 1 0 3 -1 4 c2 1 3 3 2 5 c-2 2 -4 2 -6 2 c-2 0 -3 -1 -4 -2 c-2 0 -4 1 -5 3 c-1 2 0 4 2 5 c3 2 7 2 11 0 c2 2 1 5 -1 7 c-3 2 -6 3 -9 3 c-2 3 -4 7 -4 11 h-4 c0 -6 2 -11 4 -15 c-2 -2 -4 -5 -3 -8 c1 -4 4 -8 7 -12 Z"></path>
+        <!-- Patas delanteras levantadas en salto rampante -->
+        <path d="M42 20 c3 -3 6 -4 9 -3 c-1 2 -3 4 -5 5 c3 2 4 4 3 6 c-2 1 -4 0 -6 -2 c-1 2 -3 4 -5 5 c-2 1 -3 0 -2 -2 c2 -3 4 -6 6 -9 Z"></path>
+        <!-- Cuerpo y lomo fuerte -->
+        <path d="M22 28 c3 -5 8 -8 14 -7 c4 1 8 4 10 8 c1 4 -1 8 -4 11 c-4 3 -8 4 -13 3 c-4 -1 -6 -4 -7 -8 Z"></path>
+        <!-- Patas traseras apoyadas con pezuñas -->
+        <path d="M20 38 c2 5 2 11 0 16 h-4 c1 -5 1 -10 -1 -15 c1 -1 3 -2 5 -1 Z"></path>
+        <path d="M28 41 c1 4 0 9 -2 13 h-4 c2 -4 3 -8 2 -12 c1 -1 3 -2 4 -1 Z"></path>
+        <!-- Cola curvada -->
+        <path d="M16 28 c-3 3 -4 7 -3 11 c1 3 0 6 -2 8 c-1 -2 0 -5 1 -7 c-1 -4 0 -8 3 -11 c1 -1 2 -1 1 -1 Z"></path>
+      </g>
+      <!-- Año 1906 -->
+      <text x="50" y="103" fill="#ffe088" font-size="8.5" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1906</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Torino FC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Granata</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">78 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('verona')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Gialloblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"></path>
+      <path d="M20 16 h60 c0 48 -16 78 -30 90 c-14 -12 -30 -42 -30 -90 Z" fill="none" stroke="#ffe088" stroke-width="1"></path>
+      <!-- Header Banner VERONA -->
+      <rect x="22" y="20" width="56" height="14" fill="#ffe088" rx="2"></rect>
+      <text x="50" y="31" fill="#002B49" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">HELLAS VERONA</text>
+      <!-- Los Dos Mastines de los Scaligeri enfrentados -->
+      <g fill="#ffe088">
+        <!-- Perro Mastín Izquierdo -->
+        <path d="M38 52 l-12 8 l3 14 l9 -4 l6 9 l-2 -18 l8 -6 c-4 -2 -9 -2 -12 -3 Z"></path>
+        <!-- Perro Mastín Derecho -->
+        <path d="M62 52 l12 8 l-3 14 l-9 -4 l-6 9 l2 -18 l-8 -6 c4 -2 9 -2 12 -3 Z"></path>
+        <!-- Escalera heráldica de Verona en el centro -->
+        <line x1="50" y1="42" x2="50" y2="98" stroke="#ffe088" stroke-width="3"></line>
+        <line x1="42" y1="56" x2="58" y2="56" stroke="#ffe088" stroke-width="2.5"></line>
+        <line x1="43" y1="68" x2="57" y2="68" stroke="#ffe088" stroke-width="2.5"></line>
+        <line x1="44" y1="80" x2="56" y2="80" stroke="#ffe088" stroke-width="2.5"></line>
+        <line x1="46" y1="92" x2="54" y2="92" stroke="#ffe088" stroke-width="2.5"></line>
+      </g>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Hellas Verona</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Gialloblu</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">77 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('genoa')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Rossoblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"></path>
+      <!-- Mitad derecha roja -->
+      <path d="M50 12 h34 c0 54 -18 88 -34 100 Z" fill="#C8102E"></path>
+      <!-- Header Cruz de San Jorge (Bandera de Génova) -->
+      <rect x="22" y="18" width="56" height="15" fill="#ffffff" rx="2" stroke="#ffe088" stroke-width="1"></rect>
+      <rect x="22" y="23.5" width="56" height="4" fill="#C8102E"></rect>
+      <rect x="47.5" y="18" width="5" height="15" fill="#C8102E"></rect>
+      <text x="50" y="44" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">GENOA 1893</text>
+      <!-- Grifo Rampante Oficial de Génova -->
+      <g fill="#ffe088" transform="translate(19, 44)">
+        <!-- Cabeza y pico de águila con orejas de león -->
+        <path d="M30 6 c2 -3 6 -4 9 -2 c2 1 1 3 0 4 c3 1 4 4 3 6 c-2 2 -5 2 -7 2 c-3 0 -5 -2 -5 -4 c-2 2 -4 4 -7 3 c-2 -1 -3 -3 -1 -5 c3 -2 6 -3 8 -4 Z"></path>
+        <!-- Alas doradas de Grifo extendidas -->
+        <path d="M38 12 c5 -5 12 -8 18 -6 c-2 4 -5 7 -9 9 c4 1 7 3 9 6 c-3 2 -7 2 -11 1 c-3 3 -7 5 -11 5 c2 -5 3 -10 4 -15 Z"></path>
+        <!-- Torso de león rampante con garras -->
+        <path d="M22 18 c4 -3 9 -3 13 1 c3 3 4 8 2 12 c-3 4 -8 5 -12 3 c-3 -2 -4 -6 -3 -10 Z"></path>
+        <path d="M19 28 c2 5 2 11 0 16 h-4 c1 -5 1 -10 -1 -15 c1 -1 3 -2 5 -1 Z"></path>
+        <path d="M28 32 c1 4 0 8 -2 12 h-4 c2 -4 3 -7 2 -11 c1 -1 3 -2 4 -1 Z"></path>
+        <!-- Cola de león -->
+        <path d="M15 22 c-3 3 -4 7 -3 11 c1 3 0 6 -2 8 c-1 -2 0 -5 1 -7 c-1 -4 0 -8 3 -11 Z"></path>
+      </g>
+      <text x="50" y="103" fill="#ffffff" font-size="7.5" font-family="'Space Grotesk', sans-serif" font-weight="700" letter-spacing="1" text-anchor="middle">IL GRIFONE</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Genoa CFC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Grifone</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">77 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('udinese')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Blanco -->
+      <circle cx="50" cy="50" r="47" fill="#ffffff" stroke="#000000" stroke-width="3"></circle>
+      <!-- Corona de Laureles Circulares de Friuli -->
+      <g stroke="#008751" stroke-width="2" fill="none">
+        <path d="M18 50 C18 30 30 18 50 18 C70 18 82 30 82 50 C82 70 70 82 50 82 C30 82 18 70 18 50"></path>
+      </g>
+      <g fill="#008751">
+        <!-- Hojas de Laurel Izquierda -->
+        <ellipse cx="23" cy="36" rx="4" ry="2" transform="rotate(-30 23 36)"></ellipse>
+        <ellipse cx="28" cy="27" rx="4" ry="2" transform="rotate(-45 28 27)"></ellipse>
+        <ellipse cx="38" cy="21" rx="4" ry="2" transform="rotate(-65 38 21)"></ellipse>
+        <!-- Hojas de Laurel Derecha -->
+        <ellipse cx="77" cy="36" rx="4" ry="2" transform="rotate(30 77 36)"></ellipse>
+        <ellipse cx="72" cy="27" rx="4" ry="2" transform="rotate(45 72 27)"></ellipse>
+        <ellipse cx="62" cy="21" rx="4" ry="2" transform="rotate(65 62 21)"></ellipse>
+      </g>
+      <!-- Escudo Interno con Chevron Invertido Negro (Escudo Tradicional de Udine) -->
+      <path d="M32 30 h36 v26 c0 16 -8 24 -18 28 c-10 -4 -18 -12 -18 -28 Z" fill="#ffffff" stroke="#000000" stroke-width="2"></path>
+      <!-- El chevron invertido (V negra invertida) -->
+      <polygon points="50,34 65,58 58,58 50,45 42,58 35,58" fill="#000000"></polygon>
+      <circle cx="50" cy="50" r="2" fill="#000000"></circle>
+      <!-- Texto UDINESE CALCIO -->
+      <text x="50" y="27" fill="#000000" font-size="6.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">UDINESE</text>
+      <text x="50" y="93" fill="#000000" font-size="6.5" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">1896</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Udinese Calcio</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Bianconeri Friulani</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">76 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('cagliari')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Rossoblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002244" stroke="#ffe088" stroke-width="2.5"></path>
+      <path d="M50 12 h34 c0 54 -18 88 -34 100 Z" fill="#C8102E"></path>
+      <!-- Header Banner CAGLIARI -->
+      <rect x="22" y="18" width="56" height="14" fill="#001833" rx="2" stroke="#ffe088" stroke-width="1"></rect>
+      <text x="50" y="29" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">CAGLIARI</text>
+      <!-- Escudo Interior Blanco con la Bandera de Cerdeña (4 Mori) -->
+      <g transform="translate(1, 0)">
+        <path d="M26 40 h48 v34 c0 16 -10 24 -24 28 c-14 -4 -24 -12 -24 -28 Z" fill="#ffffff" stroke="#002244" stroke-width="2"></path>
+        <!-- Cruz de San Jorge Roja -->
+        <rect x="26" y="54" width="48" height="6" fill="#C8102E"></rect>
+        <rect x="47" y="40" width="6" height="58" fill="#C8102E"></rect>
+        <!-- Los 4 Moros de Cerdeña con Venda Blanca en la Frente -->
+        <!-- Moro 1 Superior Izq -->
+        <circle cx="36" cy="47" r="3.5" fill="#000000"></circle>
+        <rect x="33" y="45.5" width="6" height="1.5" fill="#ffffff"></rect>
+        <!-- Moro 2 Superior Der -->
+        <circle cx="64" cy="47" r="3.5" fill="#000000"></circle>
+        <rect x="61" y="45.5" width="6" height="1.5" fill="#ffffff"></rect>
+        <!-- Moro 3 Inferior Izq -->
+        <circle cx="36" cy="68" r="3.5" fill="#000000"></circle>
+        <rect x="33" y="66.5" width="6" height="1.5" fill="#ffffff"></rect>
+        <!-- Moro 4 Inferior Der -->
+        <circle cx="64" cy="68" r="3.5" fill="#000000"></circle>
+        <rect x="61" y="66.5" width="6" height="1.5" fill="#ffffff"></rect>
+      </g>
+      <text x="50" y="112" fill="#ffe088" font-size="7" font-weight="700" font-family="'Space Grotesk', sans-serif" text-anchor="middle">1920</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Cagliari Calcio</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Rossoblu Isolani</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">76 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('monza')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Rojo y Blanco -->
+      <path d="M18 12 h64 c0 54 -16 88 -32 100 c-16 -12 -32 -46 -32 -100 Z" fill="#E30613" stroke="#ffffff" stroke-width="2.5"></path>
+      <path d="M22 16 h56 c0 48 -14 78 -28 90 c-14 -12 -28 -42 -28 -90 Z" fill="none" stroke="#ffe088" stroke-width="1.2"></path>
+      <!-- Corona Férrea Longobarda de Monza Dorada -->
+      <g fill="#FFD700" stroke="#d4af37" stroke-width="0.8">
+        <path d="M30 36 h40 l-3 -12 l-8 6 l-9 -10 l-9 10 l-8 -6 Z"></path>
+        <!-- Gemas incrustadas -->
+        <circle cx="36" cy="33" r="1.5" fill="#E30613"></circle>
+        <circle cx="43" cy="33" r="1.5" fill="#0055b3"></circle>
+        <circle cx="50" cy="33" r="1.8" fill="#E30613"></circle>
+        <circle cx="57" cy="33" r="1.5" fill="#0055b3"></circle>
+        <circle cx="64" cy="33" r="1.5" fill="#E30613"></circle>
+      </g>
+      <!-- Espada Central Blanca de Brianza -->
+      <rect x="47" y="42" width="6" height="38" fill="#ffffff"></rect>
+      <polygon points="50,86 45,78 55,78" fill="#ffffff"></polygon>
+      <rect x="38" y="46" width="24" height="4" rx="1.5" fill="#ffffff"></rect>
+      <circle cx="50" cy="42" r="3" fill="#FFD700"></circle>
+      <!-- Texto Oficial AC MONZA -->
+      <text x="50" y="99" fill="#ffffff" font-size="9" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">AC MONZA</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">AC Monza</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Biancorossi</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">77 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('parma')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bipartito -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#ffffff" stroke="#002244" stroke-width="2.5"></path>
+      <!-- Header Superior Amarillo Oro con 'PARMA CALCIO' -->
+      <path d="M18 14 h64 v16 h-64 Z" fill="#FFD700"></path>
+      <text x="50" y="26" fill="#002244" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">PARMA</text>
+      <!-- Mitad Izquierda: Cruz Negra Cruzada Crociata sobre fondo blanco -->
+      <rect x="18" y="30" width="32" height="74" fill="#ffffff"></rect>
+      <rect x="18" y="55" width="32" height="8" fill="#000000"></rect>
+      <rect x="30" y="30" width="8" height="66" fill="#000000"></rect>
+      <!-- Mitad Derecha: Franjas Gialloblu (Amarillas y Azules) -->
+      <g>
+        <clipPath id="parma-right">
+          <path d="M50 30 h34 c0 42 -14 66 -34 74 Z"></path>
+        </clipPath>
+        <g clip-path="url(#parma-right)">
+          <rect x="50" y="30" width="9" height="75" fill="#002B7A"></rect>
+          <rect x="59" y="30" width="9" height="75" fill="#FFD700"></rect>
+          <rect x="68" y="30" width="9" height="75" fill="#002B7A"></rect>
+          <rect x="77" y="30" width="9" height="75" fill="#FFD700"></rect>
+        </g>
+      </g>
+      <!-- Línea divisoria central negra -->
+      <line x1="50" y1="30" x2="50" y2="108" stroke="#002244" stroke-width="2"></line>
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="none" stroke="#ffe088" stroke-width="1.2"></path>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Parma Calcio</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Ducali</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">76 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('venezia')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Negro -->
+      <circle cx="50" cy="50" r="47" fill="#0b0e14" stroke="#d4af37" stroke-width="2"></circle>
+      <!-- Tricolor Circular Arancioneroverde -->
+      <!-- Franja Naranja Arancione -->
+      <path d="M20 50 A30 30 0 0 1 80 50 Z" fill="#FF6700" transform="rotate(-30 50 50)"></path>
+      <!-- Franja Verde Laguna -->
+      <path d="M20 50 A30 30 0 0 0 80 50 Z" fill="#008037" transform="rotate(-30 50 50)"></path>
+      <circle cx="50" cy="50" r="28" fill="#0b0e14" stroke="#d4af37" stroke-width="1.5"></circle>
+      <!-- La V Alada Dorada de Venezia / León Alado de San Marcos estilizado -->
+      <g fill="#ffe088" stroke="#d4af37" stroke-width="0.8">
+        <!-- V principal -->
+        <polygon points="50,68 34,35 41,35 50,55 59,35 66,35"></polygon>
+        <!-- Alas desplegadas a los costados -->
+        <path d="M34 38 c-6 2 -11 6 -14 12 c4 -1 8 -3 11 -5 Z"></path>
+        <path d="M31 46 c-4 3 -7 7 -9 12 c3 -1 6 -3 8 -5 Z"></path>
+        <path d="M66 38 c6 2 11 6 14 12 c-4 -1 -8 -3 -11 -5 Z"></path>
+        <path d="M69 46 c4 3 7 7 9 12 c-3 -1 -6 -3 -8 -5 Z"></path>
+      </g>
+      <!-- Texto VENEZIA -->
+      <text x="50" y="84" fill="#ffffff" font-size="7.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">VENEZIA</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Venezia FC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER B</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Arancioneroverdi</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">76 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('lecce')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Giallorosso -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"></path>
+      <!-- Rayas verticales Amarilla y Roja -->
+      <g>
+        <clipPath id="lecce-clip">
+          <path d="M19 15 h62 c0 50 -16 82 -31 94 c-15 -12 -31 -44 -31 -94 Z"></path>
+        </clipPath>
+        <g clip-path="url(#lecce-clip)">
+          <rect x="18" y="15" width="16" height="95" fill="#FFE088"></rect>
+          <rect x="34" y="15" width="16" height="95" fill="#C8102E"></rect>
+          <rect x="50" y="15" width="16" height="95" fill="#FFE088"></rect>
+          <rect x="66" y="15" width="16" height="95" fill="#C8102E"></rect>
+        </g>
+      </g>
+      <!-- Oval Interior con la Encina y la Loba de Lecce -->
+      <ellipse cx="50" cy="58" rx="24" ry="27" fill="#002B49" stroke="#ffe088" stroke-width="1.8"></ellipse>
+      <!-- Árbol Encina Verde -->
+      <path d="M50 48 c-8 -6 -7 -14 0 -17 c7 3 8 11 0 17 Z" fill="#009246"></path>
+      <rect x="48.5" y="47" width="3" height="15" fill="#ffe088"></rect>
+      <!-- Loba saliendo del árbol -->
+      <g fill="#ffe088">
+        <path d="M43 54 c2 -2 5 -3 7 -2 c1 2 0 4 -2 5 c-2 1 -4 2 -6 2 c-2 2 -3 4 -3 6 h-3 c0 -4 1 -7 3 -9 Z"></path>
+        <ellipse cx="44" cy="62" rx="5" ry="3"></ellipse>
+        <rect x="40" y="63" width="2" height="6"></rect>
+        <rect x="46" y="63" width="2" height="6"></rect>
+      </g>
+      <!-- Banner Inferior U.S. LECCE -->
+      <rect x="24" y="87" width="52" height="14" fill="#001833" rx="2" stroke="#ffe088" stroke-width="1"></rect>
+      <text x="50" y="97.5" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">U.S. LECCE</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">US Lecce</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER C</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Salentini</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">75 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('como')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Azul Real -->
+      <circle cx="50" cy="50" r="47" fill="#003da5" stroke="#ffffff" stroke-width="2.5"></circle>
+      <circle cx="50" cy="50" r="43" fill="#002b7a" stroke="#ffe088" stroke-width="1.2"></circle>
+      <!-- Escudo Superior con la Cruz de Como -->
+      <path d="M39 20 h22 v18 c0 7 -4 11 -11 13 c-7 -2 -11 -6 -11 -13 Z" fill="#C8102E" stroke="#ffffff" stroke-width="1.5"></path>
+      <rect x="39" y="27" width="22" height="4" fill="#ffffff"></rect>
+      <rect x="48" y="20" width="4" height="28" fill="#ffffff"></rect>
+      <!-- Las 3 Olas Blancas del Lago di Como -->
+      <g fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+        <path d="M28 58 Q38 52 50 58 T72 58"></path>
+        <path d="M26 65 Q38 59 50 65 T74 65"></path>
+        <path d="M30 72 Q38 67 50 72 T70 72"></path>
+      </g>
+      <!-- Texto COMO 1907 -->
+      <text x="50" y="86" fill="#ffe088" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">COMO 1907</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Como 1907</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER C</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Lariani</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">75 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      
+        <div class="rounded-lg bg-surface-container-low border border-outline-variant/40 hover:border-primary/60 transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('empoli')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <defs>
+        <radialGradient id="empoli-grad" cx="45%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#0077c8"></stop>
+          <stop offset="100%" stop-color="#003366"></stop>
+        </radialGradient>
+      </defs>
+      <!-- Base Redonda Azul Empoli -->
+      <circle cx="50" cy="50" r="47" fill="url(#empoli-grad)" stroke="#ffffff" stroke-width="3"></circle>
+      <circle cx="50" cy="50" r="41" fill="none" stroke="#ffe088" stroke-width="1.5"></circle>
+      <!-- Colegiata de Sant'Andrea / Corona estilizada -->
+      <g fill="#ffe088" opacity="0.9">
+        <polygon points="50,18 44,25 56,25"></polygon>
+        <polygon points="38,20 34,26 43,26"></polygon>
+        <polygon points="62,20 66,26 57,26"></polygon>
+      </g>
+      <!-- Monograma Entrelazado EFC en Blanco Nítido -->
+      <text x="50" y="60" fill="#ffffff" font-size="23" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="2" text-anchor="middle">EFC</text>
+      <line x1="30" y1="67" x2="70" y2="67" stroke="#ffe088" stroke-width="2"></line>
+      <!-- Año de Fundación -->
+      <text x="50" y="79" fill="#ffe088" font-size="9" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1920</text>
+    </svg>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Empoli FC</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER C</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>Azzurri Toscani</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">74 OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20 text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">sports_esports</span>
+              Elegir Club
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          
+        </div>
+      </div>
+</div>
+<!-- COLUMNA DERECHA: EQUIPOS YA RESERVADOS / LEDGER EN VIVO (5 Cols) -->
+<div class="lg:col-span-5 sticky top-24 space-y-6">
+<!-- Card Ledger Oficial -->
+<div class="bg-surface-container-low rounded-lg border border-outline-variant/40 p-5 shadow-2xl backdrop-blur-md">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30 mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#009246] animate-pulse"></span>
+<h3 class="text-title-sm font-title-sm text-on-surface uppercase tracking-wider font-bold">
+          EQUIPOS RESERVADOS
+        </h3>
+<span class="text-label-micro font-mono bg-surface-container px-2 py-0.5 rounded text-outline border border-outline-variant/40" id="reservedCounterBadge">(0 Registrados)</span>
+</div>
+<span class="text-label-micro font-label-micro text-primary tracking-widest font-mono flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-xs">lock</span> LEDGER OFICIAL
+      </span>
+</div>
+<!-- Lista de Equipos Reservados / Ledger -->
+<div class="space-y-2.5 custom-scroll max-h-[720px] overflow-y-auto pr-1" id="reservedTeamsList">
+        <div class="p-8 rounded-lg border-2 border-dashed border-outline-variant/40 bg-surface-container-lowest/50 text-center flex flex-col items-center justify-center gap-3 py-12">
+          <div class="w-14 h-14 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center text-outline/60">
+            <span class="material-symbols-outlined text-3xl">lock_clock</span>
+          </div>
+          <div>
+            <h4 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Aún no hay clubes reservados</h4>
+            <p class="text-body-sm font-body-sm text-on-surface-variant max-w-xs mt-1 leading-relaxed">
+              Elige un club en la columna izquierda, ingresa tu nickname de mánager y aparecerá aquí bloqueado en el Ledger Oficial.
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container text-label-micro text-primary uppercase font-mono tracking-wider border border-primary/20 mt-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> 20 CUPOS DISPONIBLES
+          </span>
+        </div>
+      </div>
+<!-- Telemetría Ledger Footer -->
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between text-[11px] font-label-micro text-outline">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> SINCRONIZACIÓN EN DIRECTO</span>
+<span class="text-primary flex items-center gap-1"><span class="material-symbols-outlined text-xs">shield</span> LEGA DLS VERIFIED</span>
+</div>
+</div>
+<!-- Tarjeta de Instrucciones Rápidas -->
+<div class="bg-surface-container-lowest/80 rounded-lg border border-outline-variant/30 p-4">
+<div class="flex items-center gap-2 text-primary font-bold text-label-ticker uppercase mb-1">
+<span class="material-symbols-outlined text-base">info</span> ¿Cómo funciona la reserva?
+    </div>
+<p class="text-body-sm text-on-surface-variant text-xs leading-relaxed">
+      1. Elige un club libre de la columna izquierda.<br>
+      2. Escribe tu Nickname de Mánager DLS.<br>
+      3. Pulsa "Confirmar Reserva": el club se transferirá automáticamente a la columna de bloqueados y se descontará del cupo total.
+    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Tournament Rules & Prize Vault Showcase -->
+<section class="w-full bg-surface-container py-16 border-t border-outline-variant/30" id="prizepool">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<span class="text-label-micro font-label-micro text-primary uppercase tracking-widest block font-bold mb-1">
+            EXCELLENCE &amp; GLORY
+          </span>
+<h2 class="text-headline-xl font-headline-xl text-on-surface uppercase tracking-tight">
+            Championship Prize Vault &amp; Regulations
+          </h2>
+</div>
+<div class="flex items-center gap-2 text-label-ticker font-label-ticker text-outline">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+          TOTAL PURSE GUARANTEED: €15,000 EUR
+        </div>
+</div>
+<!-- Bento Grid 3 Cards Prize Hierarchy -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- 1st Place Scudetto Champion -->
+<div class="rounded-lg p-6 bg-surface-container-low border-2 border-primary relative overflow-hidden shadow-2xl flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex justify-between items-start mb-4">
+<span class="px-2.5 py-1 rounded bg-primary text-surface-container-lowest text-label-micro font-label-micro font-bold uppercase tracking-wider">
+                1st Place • Scudetto
+              </span>
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">trophy</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary uppercase font-bold mb-1">€8,000</h3>
+<p class="text-title-sm font-title-sm text-on-surface mb-3">Campione d'Italia</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Awarded with the Official physical Italian Gold Scudetto Trophy, Lega eSports Champion jacket, and Verified DLS Pro Badge.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-micro font-label-micro text-outline uppercase tracking-wider">
+<span>Direct Finalist Quota</span>
+<span class="text-primary font-bold">53.3% Pool Share</span>
+</div>
+</div>
+<!-- 2nd Place Vice-Campione -->
+<div class="rounded-lg p-6 bg-surface-container-low border border-outline-variant/40 relative overflow-hidden shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-secondary text-label-micro font-label-micro font-bold uppercase tracking-wider">
+                2nd Place • Vice-Campione
+              </span>
+<span class="material-symbols-outlined text-secondary text-3xl">military_tech</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-on-surface uppercase font-bold mb-1">€4,000</h3>
+<p class="text-title-sm font-title-sm text-on-surface mb-3">Runner Up Silver Plate</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Awarded with the silver tournament plate, VIP invitation to Season 2 Finals, and €4,000 bank wire payout.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-micro font-label-micro text-outline uppercase tracking-wider">
+<span>Grand Finalist</span>
+<span class="text-secondary font-bold">26.6% Pool Share</span>
+</div>
+</div>
+<!-- 3rd & 4th Semi-Finalists -->
+<div class="rounded-lg p-6 bg-surface-container-low border border-outline-variant/40 relative overflow-hidden shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-outline text-label-micro font-label-micro font-bold uppercase tracking-wider">
+                3rd &amp; 4th Place
+              </span>
+<span class="material-symbols-outlined text-outline text-3xl">workspace_premium</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-on-surface uppercase font-bold mb-1">€1,500 <span class="text-body-md font-body-md font-normal text-outline">Each</span></h3>
+<p class="text-title-sm font-title-sm text-on-surface mb-3">Semi-Final Honors</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Shared prize split for bronze brackets plus official Serie A DLS verified merchandise kit pack.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-micro font-label-micro text-outline uppercase tracking-wider">
+<span>Semi-Final Matchup</span>
+<span class="text-outline font-bold">20.0% Pool Total</span>
+</div>
+</div>
+</div>
+<!-- Fair Play & Rules Strip -->
+<div class="p-6 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex flex-col lg:flex-row items-center justify-between gap-6" id="regulations">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center border border-primary/20 shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">gavel</span>
+</div>
+<div>
+<h4 class="text-title-sm font-title-sm text-on-surface uppercase font-bold">
+              Fair Play Protocols &amp; Match Standardization
+            </h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+              Strict 90 OVR Balanced Level Playing Field enabled across all rosters. Match broadcasting mandatory on Twitch or YouTube with anti-disconnect telemetry logs.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="px-3 py-1.5 rounded bg-surface-container text-label-micro font-label-micro uppercase text-outline border border-outline-variant/40">
+            90 OVR Balanced
+          </span>
+<span class="px-3 py-1.5 rounded bg-surface-container text-label-micro font-label-micro uppercase text-outline border border-outline-variant/40">
+            Anti-Cheat Pro
+          </span>
+<a class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-bright text-primary text-label-ticker font-label-ticker uppercase font-semibold transition-colors flex items-center gap-1" href="#">
+            Full Code of Conduct <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 mt-auto">
+<div class="w-full px-6 md:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col gap-2 text-center md:text-left">
+<div class="text-headline-sm font-headline-sm font-bold text-primary">SERIE A DE GERA DLS</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-md">© 2025 Serie A de Gera DLS. Todos los derechos reservados. Torneo oficial producido por Gera DLS.</p>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-label-micro font-label-micro uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-150 hover:underline" href="#">Tournament Regulations</a>
+<a class="hover:text-primary transition-colors duration-150 hover:underline" href="#">Fair Play Policy</a>
+<a class="hover:text-primary transition-colors duration-150 hover:underline" href="#">Privacy Protocols</a>
+<a class="hover:text-primary transition-colors duration-150 hover:underline" href="#">Official Discord</a>
+<a class="hover:text-primary transition-colors duration-150 hover:underline" href="#">Contact Federation</a>
+</div>
+</div>
+</footer>
+<!-- COMPLETE JAVASCRIPT STATE ENGINE FOR TEAM SELECTION & RESERVATION -->
+<script>
+  // Escudos SVG OFICIALES y AUTÉNTICOS de alta fidelidad para los 20 clubes de Serie A
+  const CRESTS = {
+    // 1. JUVENTUS FC: El logo moderno oficial de la 'J' doble estilizada en blanco y negro sobre escudo con 3 estrellas doradas
+    juventus: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <defs>
+        <filter id="j-glow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="1" flood-color="#000" flood-opacity="0.5"/>
+        </filter>
+      </defs>
+      <!-- Base Shield -->
+      <path d="M16 10 h68 c0 54 -16 88 -34 102 c-18 -14 -34 -48 -34 -102 Z" fill="#0b0e14" stroke="#d4af37" stroke-width="2.5"/>
+      <!-- Tre Stelle Dorate -->
+      <g fill="#f2ca50">
+        <polygon points="34,16 35.5,20.5 40,21 36.8,24 37.8,28.5 34,26 30.2,28.5 31.2,24 28,21 32.5,20.5"/>
+        <polygon points="50,14 51.5,18.5 56,19 52.8,22 53.8,26.5 50,24 46.2,26.5 47.2,22 44,19 48.5,18.5"/>
+        <polygon points="66,16 67.5,20.5 72,21 68.8,24 69.8,28.5 66,26 62.2,28.5 63.2,24 60,21 64.5,20.5"/>
+      </g>
+      <!-- Iconic Double J Modern Vector -->
+      <path d="M34 33 h12 v40 c0 6 -4 10 -10 10 h-7 c-3.5 0 -6 -2.5 -6 -6 c0 -4 3 -7 7 -7 h3 c2 0 3 -1 3 -3 Z" fill="#ffffff" filter="url(#j-glow)"/>
+      <path d="M56 33 h12 v44 c0 11 -8 20 -20 20 h-5 c-4.5 0 -8 -3.5 -8 -8 c0 -4.5 3.5 -8 8 -8 h3 c5.5 0 10 -4.5 10 -10 Z" fill="#ffffff" filter="url(#j-glow)"/>
+      <text x="50" y="108" fill="#d4af37" font-size="6.5" font-family="'Space Grotesk', sans-serif" font-weight="700" letter-spacing="2" text-anchor="middle">JUVENTUS</text>
+    </svg>`,
+
+    // 2. INTER MILAN: Escudo redondo con monograma 'IM' entrelazado en azul royal, negro y oro
+    inter: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculos concéntricos oficiales -->
+      <circle cx="50" cy="50" r="48" fill="#00183b"/>
+      <circle cx="50" cy="50" r="43" fill="#0066cc"/>
+      <circle cx="50" cy="50" r="39" fill="#001124"/>
+      <circle cx="50" cy="50" r="35" fill="none" stroke="#ffe088" stroke-width="1.8"/>
+      <circle cx="50" cy="50" r="28" fill="#001d4a"/>
+      <!-- Entrelazado I & M -->
+      <path d="M48 24 h4 v52 h-4 Z" fill="#ffe088"/>
+      <path d="M31 35 h5.5 l13.5 24 l13.5 -24 h5.5 v30 h-5 v-19.5 l-11.5 20.5 h-5 l-11.5 -20.5 v19.5 h-5 Z" fill="#ffffff"/>
+      <!-- Aros internos de contraste -->
+      <circle cx="50" cy="50" r="22" fill="none" stroke="#ffe088" stroke-width="1.2" stroke-dasharray="3 2"/>
+      <circle cx="50" cy="50" r="46.5" fill="none" stroke="#ffe088" stroke-width="1"/>
+    </svg>`,
+
+    // 3. AC MILAN: Escudo ovalado oficial con rayas rossoneras, cruz de San Jorge, estrella y ACM 1899
+    milan: `<svg viewBox="0 0 90 120" class="w-full h-full drop-shadow">
+      <!-- Stella d'Oro -->
+      <polygon points="45,4 47.5,11.5 55,12 49.5,17 51,24.5 45,20.5 39,24.5 40.5,17 35,12 42.5,11.5" fill="#f2ca50"/>
+      <!-- Oval Border -->
+      <ellipse cx="45" cy="68" rx="39" ry="50" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+      <ellipse cx="45" cy="68" rx="36" ry="47" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+      <!-- Header Banner ACM -->
+      <rect x="18" y="27" width="54" height="15" rx="3" fill="#E30613"/>
+      <text x="45" y="38" fill="#ffffff" font-size="10" font-weight="900" font-family="'Space Grotesk', sans-serif" text-anchor="middle" letter-spacing="2">ACM</text>
+      <!-- Split Body: Left Rossonero Stripes / Right St. George Cross -->
+      <g>
+        <clipPath id="milan-inner">
+          <ellipse cx="45" cy="72" rx="27" ry="32"/>
+        </clipPath>
+        <g clip-path="url(#milan-inner)">
+          <!-- Fondos -->
+          <rect x="18" y="40" width="27" height="64" fill="#000000"/>
+          <rect x="45" y="40" width="27" height="64" fill="#ffffff"/>
+          <!-- Rayas rojas izquierda -->
+          <rect x="22" y="40" width="5" height="64" fill="#E30613"/>
+          <rect x="32" y="40" width="5" height="64" fill="#E30613"/>
+          <rect x="41" y="40" width="4" height="64" fill="#E30613"/>
+          <!-- Cruz de San Jorge derecha -->
+          <rect x="45" y="68" width="27" height="8" fill="#E30613"/>
+          <rect x="54.5" y="40" width="8" height="64" fill="#E30613"/>
+        </g>
+        <!-- Marco interior oval -->
+        <ellipse cx="45" cy="72" rx="27" ry="32" fill="none" stroke="#000000" stroke-width="2"/>
+      </g>
+      <!-- Footer 1899 -->
+      <rect x="28" y="102" width="34" height="11" fill="#000000" rx="3"/>
+      <text x="45" y="110" fill="#ffe088" font-size="7.5" font-weight="800" font-family="'Space Grotesk', sans-serif" text-anchor="middle" letter-spacing="1">1899</text>
+    </svg>`,
+
+    // 4. SSC NAPOLI: Círculo azul azzurro con la 'N' tridimensional icónica y degradado cielo
+    napoli: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <defs>
+        <radialGradient id="napoli-radial" cx="40%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#38bdf8"/>
+          <stop offset="55%" stop-color="#0066cc"/>
+          <stop offset="100%" stop-color="#003366"/>
+        </radialGradient>
+        <linearGradient id="n-bevel-left" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="100%" stop-color="#cbd5e1"/>
+        </linearGradient>
+        <linearGradient id="n-bevel-right" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#93c5fd"/>
+          <stop offset="100%" stop-color="#1d4ed8"/>
+        </linearGradient>
+      </defs>
+      <!-- Aro exterior -->
+      <circle cx="50" cy="50" r="48" fill="#002b49" stroke="#38bdf8" stroke-width="2"/>
+      <circle cx="50" cy="50" r="44" fill="url(#napoli-radial)"/>
+      <circle cx="50" cy="50" r="41" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.85"/>
+      <circle cx="50" cy="50" r="32" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+      <!-- N 3D Bevel Oficial -->
+      <g transform="translate(1, 0)">
+        <!-- Columna Izquierda N -->
+        <polygon points="34,27 43,27 43,73 34,73" fill="url(#n-bevel-left)"/>
+        <!-- Diagonal 3D de la N -->
+        <polygon points="42,27 44,27 63,68 63,73 53,73 34,32 34,27" fill="#ffffff"/>
+        <!-- Sombra diagonal -->
+        <polygon points="43,27 46,27 63,65 63,73 59,73" fill="url(#n-bevel-right)"/>
+        <!-- Columna Derecha N -->
+        <polygon points="56,27 65,27 65,73 56,73" fill="url(#n-bevel-left)"/>
+      </g>
+    </svg>`,
+
+    // 5. AS ROMA: Escudo heráldico Giallorosso con la loba capitolina alimentando a Rómulo y Remo y monograma 1927
+    roma: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor -->
+      <path d="M15 15 h70 c0 55 -18 90 -35 102 c-17 -12 -35 -47 -35 -102 Z" fill="#8E1F2F" stroke="#ffe088" stroke-width="2.5"/>
+      <!-- Mitad inferior ocre/dorada Roma -->
+      <path d="M16 62 h68 c-3 26 -17 44 -34 52 c-17 -8 -31 -26 -34 -52 Z" fill="#F0BC42"/>
+      <!-- Línea divisoria elegante -->
+      <line x1="16" y1="62" x2="84" y2="62" stroke="#8E1F2F" stroke-width="1.5"/>
+      <!-- Loba Capitolina Silhouette Detallada -->
+      <g fill="#F0BC42" transform="translate(4, -2)">
+        <!-- Cabeza y hocico -->
+        <path d="M28 42 c-2 -2 -5 -2 -7 -4 c-1 -1 -1 -3 1 -3 c3 0 5 2 7 3 c2 -3 4 -5 8 -5 c3 0 4 2 5 4 c2 0 4 -1 7 0 c5 1 12 1 18 6 c3 3 5 7 5 11 c0 4 -2 7 -4 9 c-2 2 -4 1 -4 -1 c0 -2 2 -4 2 -6 c0 -4 -3 -7 -8 -8 c-6 -1 -11 0 -15 2 c-3 2 -5 5 -8 5 c-2 0 -4 -1 -5 -3 c-1 -2 0 -3 2 -4 c1 -1 3 -1 4 -1 Z"/>
+        <!-- Patas de la Loba -->
+        <rect x="27" y="47" width="3.5" height="13" rx="1.5"/>
+        <rect x="36" y="47" width="3.5" height="13" rx="1.5"/>
+        <rect x="58" y="46" width="3.5" height="14" rx="1.5"/>
+        <rect x="66" y="45" width="3.5" height="15" rx="1.5"/>
+        <!-- Rómulo y Remo gemelos -->
+        <circle cx="45" cy="56" r="2.2" fill="#ffe088"/>
+        <path d="M43 58 h4 v3 h-4 Z"/>
+        <circle cx="51" cy="56" r="2.2" fill="#ffe088"/>
+        <path d="M49 58 h4 v3 h-4 Z"/>
+      </g>
+      <!-- Texto ROMA y 1927 en rojo imperial -->
+      <text x="50" y="83" fill="#8E1F2F" font-size="14" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="2" text-anchor="middle">ROMA</text>
+      <text x="50" y="99" fill="#8E1F2F" font-size="9" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">1927</text>
+    </svg>`,
+
+    // 6. SS LAZIO: Águila imperial dorada majestuosa sobre el escudo celeste/blanco con 'S.S. LAZIO'
+    lazio: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Águila Imperial Olimpia Dorada con alas desplegadas -->
+      <path d="M50 10 c12 6 25 3 40 -3 c-6 10 -15 16 -24 19 c15 0 26 6 34 14 c-13 2 -24 -1 -34 -6 c9 7 13 14 11 20 c-7 -4 -15 -9 -21 -16 c2 6 2 12 0 16 c-4 -7 -8 -14 -8 -20 c0 6 -4 13 -8 20 c-2 -4 -2 -10 0 -16 c-6 7 -14 12 -21 16 c-2 -6 2 -13 11 -20 c-10 5 -21 8 -34 6 c8 -8 19 -14 34 -14 c-9 -3 -18 -9 -24 -19 c15 6 28 9 40 3 Z" fill="#ffe088" stroke="#d4af37" stroke-width="1.2"/>
+      <polygon points="50,18 47,24 53,24" fill="#d4af37"/>
+      <!-- Escudo Colgante -->
+      <path d="M26 48 h48 c0 36 -14 56 -24 62 c-10 -6 -24 -26 -24 -62 Z" fill="#ffffff" stroke="#002b49" stroke-width="2.5"/>
+      <!-- Rayas Celestes Lazio -->
+      <path d="M38 50 h7 v54 c-2.5 -4 -5 -8 -7 -13 Z" fill="#87CEEB"/>
+      <path d="M55 50 h7 v41 c-2 5 -4.5 9 -7 13 Z" fill="#87CEEB"/>
+      <!-- Cinta Marina 'S.S. LAZIO' -->
+      <rect x="28" y="48" width="44" height="13" fill="#002b49"/>
+      <text x="50" y="58" fill="#ffffff" font-size="7.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">S.S. LAZIO</text>
+    </svg>`,
+
+    // 7. ATALANTA BC: Escudo ovalado nerazzurro con el perfil dorado de la diosa Atalanta con cabello al viento
+    atalanta: `<svg viewBox="0 0 95 120" class="w-full h-full drop-shadow">
+      <!-- Oval Shield Base -->
+      <ellipse cx="47.5" cy="62" rx="42" ry="54" fill="#000000" stroke="#ffe088" stroke-width="2.5"/>
+      <!-- Mitad Derecha Azul Royal -->
+      <path d="M47.5 8 A42 54 0 0 1 47.5 116 Z" fill="#0055b3"/>
+      <ellipse cx="47.5" cy="62" rx="38" ry="50" fill="none" stroke="#ffe088" stroke-width="1.2"/>
+      <!-- Nombre Superior -->
+      <text x="47.5" y="27" fill="#ffe088" font-size="9" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="1.5" text-anchor="middle">ATALANTA</text>
+      <!-- Perfil Vectorial de la Heroína Atalanta en Dorado -->
+      <g fill="#ffe088" transform="translate(3, 4)">
+        <!-- Cara y cuello -->
+        <path d="M36 50 c2 -5 7 -8 11 -7 c2 1 3 3 2 5 c-2 2 -4 4 -4 7 c3 2 6 2 8 0 c1 3 -1 6 -4 8 c-3 2 -6 4 -8 7 c-2 3 -3 7 -3 10 h-7 c0 -6 2 -11 5 -15 c1 -2 2 -4 1 -6 c-1 -3 -3 -6 -4 -9 Z"/>
+        <!-- Cabello al viento desplegado a la izquierda -->
+        <path d="M22 46 c8 -4 17 -3 22 2 c-5 4 -12 5 -19 4 c-2 0 -3 -3 -3 -6 Z"/>
+        <path d="M20 54 c9 -3 18 -1 22 4 c-6 3 -14 3 -20 0 c-2 -1 -3 -3 -2 -4 Z"/>
+        <path d="M19 63 c8 -2 16 0 20 6 c-6 2 -13 1 -18 -2 c-2 -2 -3 -3 -2 -4 Z"/>
+        <path d="M21 72 c7 -1 14 2 17 8 c-5 1 -11 -1 -15 -4 c-2 -2 -3 -3 -2 -4 Z"/>
+      </g>
+      <!-- Año 1907 -->
+      <text x="47.5" y="104" fill="#ffe088" font-size="9" font-weight="800" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1907</text>
+    </svg>`,
+
+    // 8. ACF FIORENTINA: El nuevo rombo púrpura violeta con la gran 'V' y el Lirio Giglio rojo florentino
+    fiorentina: `<svg viewBox="0 0 100 110" class="w-full h-full drop-shadow">
+      <!-- Rombo Exterior Violeta Viola -->
+      <polygon points="50,4 94,55 50,106 6,55" fill="#4C12A1" stroke="#ffffff" stroke-width="2.5"/>
+      <polygon points="50,11 86,55 50,99 14,55" fill="#3B0764" stroke="#d4af37" stroke-width="1.5"/>
+      <!-- V de Viola en la parte inferior -->
+      <path d="M50 88 L74 48 L65 48 L50 72 L35 48 L26 48 Z" fill="#ffffff"/>
+      <!-- Giglio Rosso de Firenze (Lirio Rojo Florentino) -->
+      <g transform="translate(50, 36) scale(0.68)" fill="#E30613">
+        <!-- Pétalo Central -->
+        <path d="M0 -22 C-5 -14 -4 -3 0 6 C4 -3 5 -14 0 -22 Z"/>
+        <!-- Estambres centrales -->
+        <circle cx="-3" cy="-14" r="1.5"/>
+        <circle cx="3" cy="-14" r="1.5"/>
+        <!-- Pétalos Laterales Desplegados -->
+        <path d="M0 -3 C-7 -10 -18 -10 -20 -1 C-22 9 -12 12 -4 4 Z"/>
+        <path d="M0 -3 C7 -10 18 -10 20 -1 C22 9 12 12 4 4 Z"/>
+        <!-- Hojas inferiores del Lirio -->
+        <path d="M-3 6 C-9 8 -13 14 -11 20 C-9 22 -6 18 -3 14 Z"/>
+        <path d="M3 6 C9 8 13 14 11 20 C9 22 6 18 3 14 Z"/>
+        <!-- Base de la flor -->
+        <rect x="-4" y="5" width="8" height="4" rx="1"/>
+      </g>
+    </svg>`,
+
+    // 9. TORINO FC: Escudo granata con el toro rampante plateado/dorado y año 1906
+    torino: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Shield Shape Granata -->
+      <path d="M18 12 h64 c0 54 -16 88 -32 100 c-16 -12 -32 -46 -32 -100 Z" fill="#8A1538" stroke="#ffe088" stroke-width="2.5"/>
+      <path d="M22 16 h56 c0 48 -14 80 -28 91 c-14 -11 -28 -43 -28 -91 Z" fill="none" stroke="#ffe088" stroke-width="1.2"/>
+      <!-- Header Banner 'TORINO' -->
+      <rect x="25" y="22" width="50" height="15" fill="#000000" rx="2" opacity="0.4"/>
+      <text x="50" y="33" fill="#ffffff" font-size="10" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="1.5" text-anchor="middle">TORINO</text>
+      <!-- Toro Rampante Fiel -->
+      <g fill="#ffe088" transform="translate(18, 35)">
+        <!-- Cabeza y cuernos del toro en embestida -->
+        <path d="M32 14 c2 -2 5 -4 7 -3 c1 1 0 3 -1 4 c2 1 3 3 2 5 c-2 2 -4 2 -6 2 c-2 0 -3 -1 -4 -2 c-2 0 -4 1 -5 3 c-1 2 0 4 2 5 c3 2 7 2 11 0 c2 2 1 5 -1 7 c-3 2 -6 3 -9 3 c-2 3 -4 7 -4 11 h-4 c0 -6 2 -11 4 -15 c-2 -2 -4 -5 -3 -8 c1 -4 4 -8 7 -12 Z"/>
+        <!-- Patas delanteras levantadas en salto rampante -->
+        <path d="M42 20 c3 -3 6 -4 9 -3 c-1 2 -3 4 -5 5 c3 2 4 4 3 6 c-2 1 -4 0 -6 -2 c-1 2 -3 4 -5 5 c-2 1 -3 0 -2 -2 c2 -3 4 -6 6 -9 Z"/>
+        <!-- Cuerpo y lomo fuerte -->
+        <path d="M22 28 c3 -5 8 -8 14 -7 c4 1 8 4 10 8 c1 4 -1 8 -4 11 c-4 3 -8 4 -13 3 c-4 -1 -6 -4 -7 -8 Z"/>
+        <!-- Patas traseras apoyadas con pezuñas -->
+        <path d="M20 38 c2 5 2 11 0 16 h-4 c1 -5 1 -10 -1 -15 c1 -1 3 -2 5 -1 Z"/>
+        <path d="M28 41 c1 4 0 9 -2 13 h-4 c2 -4 3 -8 2 -12 c1 -1 3 -2 4 -1 Z"/>
+        <!-- Cola curvada -->
+        <path d="M16 28 c-3 3 -4 7 -3 11 c1 3 0 6 -2 8 c-1 -2 0 -5 1 -7 c-1 -4 0 -8 3 -11 c1 -1 2 -1 1 -1 Z"/>
+      </g>
+      <!-- Año 1906 -->
+      <text x="50" y="103" fill="#ffe088" font-size="8.5" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1906</text>
+    </svg>`,
+
+    // 10. BOLOGNA FC: Escudo ovalado oficial con franjas rossoblu, cruz roja y BFC 1909
+    bologna: `<svg viewBox="0 0 95 120" class="w-full h-full drop-shadow">
+      <!-- Oval Base -->
+      <ellipse cx="47.5" cy="62" rx="42" ry="54" fill="#ffffff" stroke="#002B49" stroke-width="2.5"/>
+      <ellipse cx="47.5" cy="62" rx="38" ry="50" fill="#ffffff" stroke="#ffe088" stroke-width="1.5"/>
+      <!-- Cabecera Azul Marina con BFC 1909 -->
+      <path d="M12 40 C16 22 30 14 47.5 14 C65 14 79 22 83 40 Z" fill="#002B49"/>
+      <text x="47.5" y="32" fill="#ffe088" font-size="10.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">BFC 1909</text>
+      <!-- Cuadrantes Inferiores divididos -->
+      <g>
+        <clipPath id="bologna-body">
+          <path d="M12 40 h71 c2 10 3 20 3 24 c0 28 -16 48 -38.5 48 c-22.5 0 -38.5 -20 -38.5 -48 c0 -4 1 -14 3 -24 Z"/>
+        </clipPath>
+        <g clip-path="url(#bologna-body)">
+          <!-- Rayas Rossoblu -->
+          <rect x="10" y="40" width="19" height="75" fill="#002B49"/>
+          <rect x="29" y="40" width="19" height="75" fill="#C8102E"/>
+          <!-- Cuadrante Cruz Roja sobre blanco de Bolonia -->
+          <rect x="48" y="40" width="40" height="75" fill="#ffffff"/>
+          <rect x="48" y="60" width="40" height="10" fill="#C8102E"/>
+          <rect x="63" y="40" width="10" height="75" fill="#C8102E"/>
+        </g>
+      </g>
+      <!-- Contorno divisorio central -->
+      <line x1="48" y1="40" x2="48" y2="112" stroke="#ffe088" stroke-width="1.5"/>
+    </svg>`,
+
+    // 11. HELLAS VERONA: Escudo azul y amarillo con los dos mastines enfrentados y la escalera scaligera
+    verona: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Gialloblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"/>
+      <path d="M20 16 h60 c0 48 -16 78 -30 90 c-14 -12 -30 -42 -30 -90 Z" fill="none" stroke="#ffe088" stroke-width="1"/>
+      <!-- Header Banner VERONA -->
+      <rect x="22" y="20" width="56" height="14" fill="#ffe088" rx="2"/>
+      <text x="50" y="31" fill="#002B49" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">HELLAS VERONA</text>
+      <!-- Los Dos Mastines de los Scaligeri enfrentados -->
+      <g fill="#ffe088">
+        <!-- Perro Mastín Izquierdo -->
+        <path d="M38 52 l-12 8 l3 14 l9 -4 l6 9 l-2 -18 l8 -6 c-4 -2 -9 -2 -12 -3 Z"/>
+        <!-- Perro Mastín Derecho -->
+        <path d="M62 52 l12 8 l-3 14 l-9 -4 l-6 9 l2 -18 l-8 -6 c4 -2 9 -2 12 -3 Z"/>
+        <!-- Escalera heráldica de Verona en el centro -->
+        <line x1="50" y1="42" x2="50" y2="98" stroke="#ffe088" stroke-width="3"/>
+        <line x1="42" y1="56" x2="58" y2="56" stroke="#ffe088" stroke-width="2.5"/>
+        <line x1="43" y1="68" x2="57" y2="68" stroke="#ffe088" stroke-width="2.5"/>
+        <line x1="44" y1="80" x2="56" y2="80" stroke="#ffe088" stroke-width="2.5"/>
+        <line x1="46" y1="92" x2="54" y2="92" stroke="#ffe088" stroke-width="2.5"/>
+      </g>
+    </svg>`,
+
+    // 12. GENOA CFC: Escudo con la cruz de San Jorge roja y el grifo mitológico dorado sobre campo rossoblu
+    genoa: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Rossoblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"/>
+      <!-- Mitad derecha roja -->
+      <path d="M50 12 h34 c0 54 -18 88 -34 100 Z" fill="#C8102E"/>
+      <!-- Header Cruz de San Jorge (Bandera de Génova) -->
+      <rect x="22" y="18" width="56" height="15" fill="#ffffff" rx="2" stroke="#ffe088" stroke-width="1"/>
+      <rect x="22" y="23.5" width="56" height="4" fill="#C8102E"/>
+      <rect x="47.5" y="18" width="5" height="15" fill="#C8102E"/>
+      <text x="50" y="44" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">GENOA 1893</text>
+      <!-- Grifo Rampante Oficial de Génova -->
+      <g fill="#ffe088" transform="translate(19, 44)">
+        <!-- Cabeza y pico de águila con orejas de león -->
+        <path d="M30 6 c2 -3 6 -4 9 -2 c2 1 1 3 0 4 c3 1 4 4 3 6 c-2 2 -5 2 -7 2 c-3 0 -5 -2 -5 -4 c-2 2 -4 4 -7 3 c-2 -1 -3 -3 -1 -5 c3 -2 6 -3 8 -4 Z"/>
+        <!-- Alas doradas de Grifo extendidas -->
+        <path d="M38 12 c5 -5 12 -8 18 -6 c-2 4 -5 7 -9 9 c4 1 7 3 9 6 c-3 2 -7 2 -11 1 c-3 3 -7 5 -11 5 c2 -5 3 -10 4 -15 Z"/>
+        <!-- Torso de león rampante con garras -->
+        <path d="M22 18 c4 -3 9 -3 13 1 c3 3 4 8 2 12 c-3 4 -8 5 -12 3 c-3 -2 -4 -6 -3 -10 Z"/>
+        <path d="M19 28 c2 5 2 11 0 16 h-4 c1 -5 1 -10 -1 -15 c1 -1 3 -2 5 -1 Z"/>
+        <path d="M28 32 c1 4 0 8 -2 12 h-4 c2 -4 3 -7 2 -11 c1 -1 3 -2 4 -1 Z"/>
+        <!-- Cola de león -->
+        <path d="M15 22 c-3 3 -4 7 -3 11 c1 3 0 6 -2 8 c-1 -2 0 -5 1 -7 c-1 -4 0 -8 3 -11 Z"/>
+      </g>
+      <text x="50" y="103" fill="#ffffff" font-size="7.5" font-family="'Space Grotesk', sans-serif" font-weight="700" letter-spacing="1" text-anchor="middle">IL GRIFONE</text>
+    </svg>`,
+
+    // 13. UDINESE CALCIO: Escudo heráldico con el chevron invertido negro sobre blanco y corona de laureles verdes
+    udinese: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Blanco -->
+      <circle cx="50" cy="50" r="47" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+      <!-- Corona de Laureles Circulares de Friuli -->
+      <g stroke="#008751" stroke-width="2" fill="none">
+        <path d="M18 50 C18 30 30 18 50 18 C70 18 82 30 82 50 C82 70 70 82 50 82 C30 82 18 70 18 50"/>
+      </g>
+      <g fill="#008751">
+        <!-- Hojas de Laurel Izquierda -->
+        <ellipse cx="23" cy="36" rx="4" ry="2" transform="rotate(-30 23 36)"/>
+        <ellipse cx="28" cy="27" rx="4" ry="2" transform="rotate(-45 28 27)"/>
+        <ellipse cx="38" cy="21" rx="4" ry="2" transform="rotate(-65 38 21)"/>
+        <!-- Hojas de Laurel Derecha -->
+        <ellipse cx="77" cy="36" rx="4" ry="2" transform="rotate(30 77 36)"/>
+        <ellipse cx="72" cy="27" rx="4" ry="2" transform="rotate(45 72 27)"/>
+        <ellipse cx="62" cy="21" rx="4" ry="2" transform="rotate(65 62 21)"/>
+      </g>
+      <!-- Escudo Interno con Chevron Invertido Negro (Escudo Tradicional de Udine) -->
+      <path d="M32 30 h36 v26 c0 16 -8 24 -18 28 c-10 -4 -18 -12 -18 -28 Z" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <!-- El chevron invertido (V negra invertida) -->
+      <polygon points="50,34 65,58 58,58 50,45 42,58 35,58" fill="#000000"/>
+      <circle cx="50" cy="50" r="2" fill="#000000"/>
+      <!-- Texto UDINESE CALCIO -->
+      <text x="50" y="27" fill="#000000" font-size="6.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">UDINESE</text>
+      <text x="50" y="93" fill="#000000" font-size="6.5" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">1896</text>
+    </svg>`,
+
+    // 14. CAGLIARI CALCIO: Escudo con la cruz de San Jorge roja y los 4 moros sardos vendados sobre azul y rojo
+    cagliari: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Rossoblu -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002244" stroke="#ffe088" stroke-width="2.5"/>
+      <path d="M50 12 h34 c0 54 -18 88 -34 100 Z" fill="#C8102E"/>
+      <!-- Header Banner CAGLIARI -->
+      <rect x="22" y="18" width="56" height="14" fill="#001833" rx="2" stroke="#ffe088" stroke-width="1"/>
+      <text x="50" y="29" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">CAGLIARI</text>
+      <!-- Escudo Interior Blanco con la Bandera de Cerdeña (4 Mori) -->
+      <g transform="translate(1, 0)">
+        <path d="M26 40 h48 v34 c0 16 -10 24 -24 28 c-14 -4 -24 -12 -24 -28 Z" fill="#ffffff" stroke="#002244" stroke-width="2"/>
+        <!-- Cruz de San Jorge Roja -->
+        <rect x="26" y="54" width="48" height="6" fill="#C8102E"/>
+        <rect x="47" y="40" width="6" height="58" fill="#C8102E"/>
+        <!-- Los 4 Moros de Cerdeña con Venda Blanca en la Frente -->
+        <!-- Moro 1 Superior Izq -->
+        <circle cx="36" cy="47" r="3.5" fill="#000000"/>
+        <rect x="33" y="45.5" width="6" height="1.5" fill="#ffffff"/>
+        <!-- Moro 2 Superior Der -->
+        <circle cx="64" cy="47" r="3.5" fill="#000000"/>
+        <rect x="61" y="45.5" width="6" height="1.5" fill="#ffffff"/>
+        <!-- Moro 3 Inferior Izq -->
+        <circle cx="36" cy="68" r="3.5" fill="#000000"/>
+        <rect x="33" y="66.5" width="6" height="1.5" fill="#ffffff"/>
+        <!-- Moro 4 Inferior Der -->
+        <circle cx="64" cy="68" r="3.5" fill="#000000"/>
+        <rect x="61" y="66.5" width="6" height="1.5" fill="#ffffff"/>
+      </g>
+      <text x="50" y="112" fill="#ffe088" font-size="7" font-weight="700" font-family="'Space Grotesk', sans-serif" text-anchor="middle">1920</text>
+    </svg>`,
+
+    // 15. AC MONZA: Escudo rojo oficial con la corona férrea / espada de Brianza y 'AC MONZA'
+    monza: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Rojo y Blanco -->
+      <path d="M18 12 h64 c0 54 -16 88 -32 100 c-16 -12 -32 -46 -32 -100 Z" fill="#E30613" stroke="#ffffff" stroke-width="2.5"/>
+      <path d="M22 16 h56 c0 48 -14 78 -28 90 c-14 -12 -28 -42 -28 -90 Z" fill="none" stroke="#ffe088" stroke-width="1.2"/>
+      <!-- Corona Férrea Longobarda de Monza Dorada -->
+      <g fill="#FFD700" stroke="#d4af37" stroke-width="0.8">
+        <path d="M30 36 h40 l-3 -12 l-8 6 l-9 -10 l-9 10 l-8 -6 Z"/>
+        <!-- Gemas incrustadas -->
+        <circle cx="36" cy="33" r="1.5" fill="#E30613"/>
+        <circle cx="43" cy="33" r="1.5" fill="#0055b3"/>
+        <circle cx="50" cy="33" r="1.8" fill="#E30613"/>
+        <circle cx="57" cy="33" r="1.5" fill="#0055b3"/>
+        <circle cx="64" cy="33" r="1.5" fill="#E30613"/>
+      </g>
+      <!-- Espada Central Blanca de Brianza -->
+      <rect x="47" y="42" width="6" height="38" fill="#ffffff"/>
+      <polygon points="50,86 45,78 55,78" fill="#ffffff"/>
+      <rect x="38" y="46" width="24" height="4" rx="1.5" fill="#ffffff"/>
+      <circle cx="50" cy="42" r="3" fill="#FFD700"/>
+      <!-- Texto Oficial AC MONZA -->
+      <text x="50" y="99" fill="#ffffff" font-size="9" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">AC MONZA</text>
+    </svg>`,
+
+    // 16. VENEZIA FC: La 'V' alada dorada moderna sobre los colores Arancioneroverdi (Naranja, Negro y Verde)
+    venezia: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Negro -->
+      <circle cx="50" cy="50" r="47" fill="#0b0e14" stroke="#d4af37" stroke-width="2"/>
+      <!-- Tricolor Circular Arancioneroverde -->
+      <!-- Franja Naranja Arancione -->
+      <path d="M20 50 A30 30 0 0 1 80 50 Z" fill="#FF6700" transform="rotate(-30 50 50)"/>
+      <!-- Franja Verde Laguna -->
+      <path d="M20 50 A30 30 0 0 0 80 50 Z" fill="#008037" transform="rotate(-30 50 50)"/>
+      <circle cx="50" cy="50" r="28" fill="#0b0e14" stroke="#d4af37" stroke-width="1.5"/>
+      <!-- La V Alada Dorada de Venezia / León Alado de San Marcos estilizado -->
+      <g fill="#ffe088" stroke="#d4af37" stroke-width="0.8">
+        <!-- V principal -->
+        <polygon points="50,68 34,35 41,35 50,55 59,35 66,35"/>
+        <!-- Alas desplegadas a los costados -->
+        <path d="M34 38 c-6 2 -11 6 -14 12 c4 -1 8 -3 11 -5 Z"/>
+        <path d="M31 46 c-4 3 -7 7 -9 12 c3 -1 6 -3 8 -5 Z"/>
+        <path d="M66 38 c6 2 11 6 14 12 c-4 -1 -8 -3 -11 -5 Z"/>
+        <path d="M69 46 c4 3 7 7 9 12 c-3 -1 -6 -3 -8 -5 Z"/>
+      </g>
+      <!-- Texto VENEZIA -->
+      <text x="50" y="84" fill="#ffffff" font-size="7.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">VENEZIA</text>
+    </svg>`,
+
+    // 17. US LECCE: Escudo con la loba saliendo bajo la encina de Salento sobre franjas amarilla y roja
+    lecce: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bicolor Giallorosso -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#002B49" stroke="#ffe088" stroke-width="2.5"/>
+      <!-- Rayas verticales Amarilla y Roja -->
+      <g>
+        <clipPath id="lecce-clip">
+          <path d="M19 15 h62 c0 50 -16 82 -31 94 c-15 -12 -31 -44 -31 -94 Z"/>
+        </clipPath>
+        <g clip-path="url(#lecce-clip)">
+          <rect x="18" y="15" width="16" height="95" fill="#FFE088"/>
+          <rect x="34" y="15" width="16" height="95" fill="#C8102E"/>
+          <rect x="50" y="15" width="16" height="95" fill="#FFE088"/>
+          <rect x="66" y="15" width="16" height="95" fill="#C8102E"/>
+        </g>
+      </g>
+      <!-- Oval Interior con la Encina y la Loba de Lecce -->
+      <ellipse cx="50" cy="58" rx="24" ry="27" fill="#002B49" stroke="#ffe088" stroke-width="1.8"/>
+      <!-- Árbol Encina Verde -->
+      <path d="M50 48 c-8 -6 -7 -14 0 -17 c7 3 8 11 0 17 Z" fill="#009246"/>
+      <rect x="48.5" y="47" width="3" height="15" fill="#ffe088"/>
+      <!-- Loba saliendo del árbol -->
+      <g fill="#ffe088">
+        <path d="M43 54 c2 -2 5 -3 7 -2 c1 2 0 4 -2 5 c-2 1 -4 2 -6 2 c-2 2 -3 4 -3 6 h-3 c0 -4 1 -7 3 -9 Z"/>
+        <ellipse cx="44" cy="62" rx="5" ry="3"/>
+        <rect x="40" y="63" width="2" height="6"/>
+        <rect x="46" y="63" width="2" height="6"/>
+      </g>
+      <!-- Banner Inferior U.S. LECCE -->
+      <rect x="24" y="87" width="52" height="14" fill="#001833" rx="2" stroke="#ffe088" stroke-width="1"/>
+      <text x="50" y="97.5" fill="#ffe088" font-size="8" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">U.S. LECCE</text>
+    </svg>`,
+
+    // 18. COMO 1907: Escudo azul real con las tres ondas de agua blanca del Lago de Como y la cruz blanca
+    como: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <!-- Círculo Base Azul Real -->
+      <circle cx="50" cy="50" r="47" fill="#003da5" stroke="#ffffff" stroke-width="2.5"/>
+      <circle cx="50" cy="50" r="43" fill="#002b7a" stroke="#ffe088" stroke-width="1.2"/>
+      <!-- Escudo Superior con la Cruz de Como -->
+      <path d="M39 20 h22 v18 c0 7 -4 11 -11 13 c-7 -2 -11 -6 -11 -13 Z" fill="#C8102E" stroke="#ffffff" stroke-width="1.5"/>
+      <rect x="39" y="27" width="22" height="4" fill="#ffffff"/>
+      <rect x="48" y="20" width="4" height="28" fill="#ffffff"/>
+      <!-- Las 3 Olas Blancas del Lago di Como -->
+      <g fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+        <path d="M28 58 Q38 52 50 58 T72 58"/>
+        <path d="M26 65 Q38 59 50 65 T74 65"/>
+        <path d="M30 72 Q38 67 50 72 T70 72"/>
+      </g>
+      <!-- Texto COMO 1907 -->
+      <text x="50" y="86" fill="#ffe088" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1.5" text-anchor="middle">COMO 1907</text>
+    </svg>`,
+
+    // 19. EMPOLI FC: Escudo redondo azul azzurro con el monograma estilizado EFC y año 1920
+    empoli: `<svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+      <defs>
+        <radialGradient id="empoli-grad" cx="45%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#0077c8"/>
+          <stop offset="100%" stop-color="#003366"/>
+        </radialGradient>
+      </defs>
+      <!-- Base Redonda Azul Empoli -->
+      <circle cx="50" cy="50" r="47" fill="url(#empoli-grad)" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="50" cy="50" r="41" fill="none" stroke="#ffe088" stroke-width="1.5"/>
+      <!-- Colegiata de Sant'Andrea / Corona estilizada -->
+      <g fill="#ffe088" opacity="0.9">
+        <polygon points="50,18 44,25 56,25"/>
+        <polygon points="38,20 34,26 43,26"/>
+        <polygon points="62,20 66,26 57,26"/>
+      </g>
+      <!-- Monograma Entrelazado EFC en Blanco Nítido -->
+      <text x="50" y="60" fill="#ffffff" font-size="23" font-weight="900" font-family="'Syne', sans-serif" letter-spacing="2" text-anchor="middle">EFC</text>
+      <line x1="30" y1="67" x2="70" y2="67" stroke="#ffe088" stroke-width="2"/>
+      <!-- Año de Fundación -->
+      <text x="50" y="79" fill="#ffe088" font-size="9" font-weight="700" font-family="'Space Grotesk', sans-serif" letter-spacing="2" text-anchor="middle">1920</text>
+    </svg>`,
+
+    // 20. PARMA CALCIO: Escudo dividido con la cruz negra sobre blanco a la izquierda y franjas verticales amarillas y azules a la derecha
+    parma: `<svg viewBox="0 0 100 120" class="w-full h-full drop-shadow">
+      <!-- Escudo Bipartito -->
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="#ffffff" stroke="#002244" stroke-width="2.5"/>
+      <!-- Header Superior Amarillo Oro con 'PARMA CALCIO' -->
+      <path d="M18 14 h64 v16 h-64 Z" fill="#FFD700"/>
+      <text x="50" y="26" fill="#002244" font-size="8.5" font-weight="900" font-family="'Space Grotesk', sans-serif" letter-spacing="1" text-anchor="middle">PARMA</text>
+      <!-- Mitad Izquierda: Cruz Negra Cruzada Crociata sobre fondo blanco -->
+      <rect x="18" y="30" width="32" height="74" fill="#ffffff"/>
+      <rect x="18" y="55" width="32" height="8" fill="#000000"/>
+      <rect x="30" y="30" width="8" height="66" fill="#000000"/>
+      <!-- Mitad Derecha: Franjas Gialloblu (Amarillas y Azules) -->
+      <g>
+        <clipPath id="parma-right">
+          <path d="M50 30 h34 c0 42 -14 66 -34 74 Z"/>
+        </clipPath>
+        <g clip-path="url(#parma-right)">
+          <rect x="50" y="30" width="9" height="75" fill="#002B7A"/>
+          <rect x="59" y="30" width="9" height="75" fill="#FFD700"/>
+          <rect x="68" y="30" width="9" height="75" fill="#002B7A"/>
+          <rect x="77" y="30" width="9" height="75" fill="#FFD700"/>
+        </g>
+      </g>
+      <!-- Línea divisoria central negra -->
+      <line x1="50" y1="30" x2="50" y2="108" stroke="#002244" stroke-width="2"/>
+      <path d="M16 12 h68 c0 54 -18 88 -34 100 c-16 -12 -34 -46 -34 -100 Z" fill="none" stroke="#ffe088" stroke-width="1.2"/>
+    </svg>`
+  };
+
+  // Base de datos de los 20 clubes oficiales de Serie A: TODOS LIBRES al inicio
+  const TEAMS_DATA = [
+    { id: "juventus", name: "Juventus FC", nickname: "Bianconeri", ovr: 86, tier: "S", crest: CRESTS.juventus, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "inter", name: "Inter Milan", nickname: "Nerazzurri", ovr: 86, tier: "S", crest: CRESTS.inter, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "milan", name: "AC Milan", nickname: "Rossoneri", ovr: 85, tier: "S", crest: CRESTS.milan, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "napoli", name: "SSC Napoli", nickname: "Azzurri", ovr: 85, tier: "S", crest: CRESTS.napoli, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "roma", name: "AS Roma", nickname: "Giallorossi", ovr: 83, tier: "A", crest: CRESTS.roma, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "lazio", name: "SS Lazio", nickname: "Biancocelesti", ovr: 82, tier: "A", crest: CRESTS.lazio, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "atalanta", name: "Atalanta BC", nickname: "Nerazzurri Orobici", ovr: 83, tier: "A", crest: CRESTS.atalanta, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "fiorentina", name: "ACF Fiorentina", nickname: "Viola", ovr: 81, tier: "A", crest: CRESTS.fiorentina, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "bologna", name: "Bologna FC", nickname: "Rossoblu", ovr: 80, tier: "A", crest: CRESTS.bologna, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "torino", name: "Torino FC", nickname: "Granata", ovr: 78, tier: "B", crest: CRESTS.torino, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "verona", name: "Hellas Verona", nickname: "Gialloblu", ovr: 77, tier: "B", crest: CRESTS.verona, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "genoa", name: "Genoa CFC", nickname: "Grifone", ovr: 77, tier: "B", crest: CRESTS.genoa, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "udinese", name: "Udinese Calcio", nickname: "Bianconeri Friulani", ovr: 76, tier: "B", crest: CRESTS.udinese, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "cagliari", name: "Cagliari Calcio", nickname: "Rossoblu Isolani", ovr: 76, tier: "B", crest: CRESTS.cagliari, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "monza", name: "AC Monza", nickname: "Biancorossi", ovr: 77, tier: "B", crest: CRESTS.monza, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "parma", name: "Parma Calcio", nickname: "Ducali", ovr: 76, tier: "B", crest: CRESTS.parma, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "venezia", name: "Venezia FC", nickname: "Arancioneroverdi", ovr: 76, tier: "B", crest: CRESTS.venezia, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "lecce", name: "US Lecce", nickname: "Salentini", ovr: 75, tier: "C", crest: CRESTS.lecce, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "como", name: "Como 1907", nickname: "Lariani", ovr: 75, tier: "C", crest: CRESTS.como, borderAccent: "border-l-primary", isReserved: false, manager: null },
+    { id: "empoli", name: "Empoli FC", nickname: "Azzurri Toscani", ovr: 74, tier: "C", crest: CRESTS.empoli, borderAccent: "border-l-primary", isReserved: false, manager: null }
+  ];
+
+  // ==========================================
+  // PERSISTENCIA Y SINCRONIZACIÓN
+  // ==========================================
+  const STORAGE_KEY = 'SERIE_A_DLS_RESERVATIONS_v2';
+
+  // Cargar reservas guardadas localmente
+  function loadSavedReservations() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return saved ? JSON.parse(saved) : {};
+    } catch (e) {
+      console.warn("Error leyendo localStorage:", e);
+      return {};
+    }
+  }
+
+  // Guardar mapa de reservas { [teamId]: managerName }
+  function saveReservationsLocally(map) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+    } catch (e) {
+      console.error("Error guardando en localStorage:", e);
+    }
+  }
+
+  // Mapa reactivo de reservas { [id]: manager }
+  let savedReservations = loadSavedReservations();
+
+  // Estado reactivo: fusionamos datos base con las reservas guardadas
+  let teams = TEAMS_DATA.map(t => {
+    if (savedReservations[t.id]) {
+      return { ...t, isReserved: true, manager: savedReservations[t.id] };
+    }
+    return { ...t, isReserved: false, manager: null };
+  });
+
+  let activeSelectingId = null; // ID del equipo que tiene desplegado el input
+  let newlyReservedId = null;   // ID del recién reservado para resaltar
+  let searchQuery = "";
+
+  // Elementos DOM
+  const availableContainer = document.getElementById("availableTeamsList");
+  const reservedContainer = document.getElementById("reservedTeamsList");
+  const availableBadge = document.getElementById("availableCounterBadge");
+  const reservedBadge = document.getElementById("reservedCounterBadge");
+  const heroQuotaDisplay = document.getElementById("heroQuotaDisplay");
+  const heroSpotsDisplay = document.getElementById("heroSpotsDisplay");
+  const searchInput = document.getElementById("availableSearchInput");
+  const toastContainer = document.getElementById("toastContainer");
+
+  // Mostrar Toast Notificación
+  function showToast(message, subtext = "Lega Serie A eSports") {
+    const toast = document.createElement("div");
+    toast.className = "animate-toast bg-surface-container-high border-2 border-primary text-on-surface px-5 py-3 rounded-lg shadow-2xl flex items-center gap-3 pointer-events-auto backdrop-blur-md";
+    toast.innerHTML = `
+      <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0 border border-primary/40">
+        <span class="material-symbols-outlined text-lg">check_circle</span>
+      </div>
+      <div>
+        <p class="text-title-sm font-title-sm font-bold text-primary leading-tight">${message}</p>
+        <p class="text-label-micro font-label-micro text-outline uppercase tracking-wider">${subtext}</p>
+      </div>
+    `;
+    toastContainer.appendChild(toast);
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      toast.style.transition = 'all 0.3s ease';
+      setTimeout(() => toast.remove(), 300);
+    }, 4000);
+  }
+
+  // Actualizar métricas del Hero y badges
+  function updateCounters() {
+    const reservedCount = teams.filter(t => t.isReserved).length;
+    const availableCount = teams.length - reservedCount;
+
+    if (availableBadge) availableBadge.textContent = `(${availableCount} Libres)`;
+    if (reservedBadge) reservedBadge.textContent = `(${reservedCount} Registrados)`;
+    
+    if (heroQuotaDisplay) {
+      heroQuotaDisplay.innerHTML = `${reservedCount}<span class="text-outline text-headline-md font-headline-md font-normal">/20</span>`;
+    }
+    if (heroSpotsDisplay) {
+      heroSpotsDisplay.textContent = availableCount === 0 ? "¡COMPLETO!" : `${availableCount} Libres`;
+    }
+  }
+
+  // Toggle de apertura del campo de reserva en una tarjeta de la izquierda
+  window.toggleSelectMode = function(teamId) {
+    if (activeSelectingId === teamId) {
+      activeSelectingId = null;
+    } else {
+      activeSelectingId = teamId;
+    }
+    renderAvailableColumn();
+    if (activeSelectingId) {
+      setTimeout(() => {
+        const inp = document.getElementById(`manager-input-${teamId}`);
+        if (inp) inp.focus();
+      }, 50);
+    }
+  };
+
+  // Confirmar reserva de un equipo y PERSISTIR
+  window.confirmReservation = function(teamId) {
+    const input = document.getElementById(`manager-input-${teamId}`);
+    if (!input) return;
+    const managerName = input.value.trim();
+
+    if (!managerName) {
+      input.classList.add("border-error");
+      input.placeholder = "¡Escribe tu nombre aquí!";
+      return;
+    }
+
+    const team = teams.find(t => t.id === teamId);
+    if (!team) return;
+
+    // Actualizar estado reactivo
+    team.isReserved = true;
+    team.manager = managerName;
+    newlyReservedId = teamId;
+    activeSelectingId = null;
+
+    // Guardar en el almacenamiento permanente
+    savedReservations[teamId] = managerName;
+    saveReservationsLocally(savedReservations);
+
+    // Re-renderizar columnas y contadores
+    renderAvailableColumn();
+    renderReservedColumn();
+    updateCounters();
+
+    // Notificación de éxito
+    showToast(`¡Reservado con éxito! ${team.name}`, `Mánager: ${managerName} • Guardado permanentemente`);
+
+    setTimeout(() => {
+      newlyReservedId = null;
+    }, 3000);
+  };
+
+  // Cancelar / Liberar la reserva de un club (para administradores o correcciones)
+  window.cancelReservation = function(teamId) {
+    const team = teams.find(t => t.id === teamId);
+    if (!team) return;
+
+    const confirmRelease = confirm(`¿Deseas liberar ${team.name} (Mánager: ${team.manager}) para que vuelva a estar disponible?`);
+    if (!confirmRelease) return;
+
+    team.isReserved = false;
+    team.manager = null;
+
+    delete savedReservations[teamId];
+    saveReservationsLocally(savedReservations);
+
+    renderAvailableColumn();
+    renderReservedColumn();
+    updateCounters();
+
+    showToast(`${team.name} ha sido liberado`, "Ahora está disponible en la lista");
+  };
+
+  // Copiar lista de inscritos para compartir en WhatsApp
+  window.copyWhatsAppList = function() {
+    const reservedList = teams.filter(t => t.isReserved);
+    if (reservedList.length === 0) {
+      alert("Aún no hay equipos reservados para compartir.");
+      return;
+    }
+
+    let text = "🏆 *SERIE A DE GERA DLS - EQUIPOS REGISTRADOS* 🏆\n\n";
+    reservedList.forEach((t, index) => {
+      text += `${index + 1}. *${t.name}* ➔ ${t.manager}\n`;
+    });
+    const libres = 20 - reservedList.length;
+    text += `\n📊 *CUPOS:* ${reservedList.length}/20 reservados (${libres} libres)\n`;
+    text += "⚽ Reserva tu club aquí: " + window.location.href;
+
+    navigator.clipboard.writeText(text).then(() => {
+      showToast("¡Copiado al portapapeles!", "Listo para pegar en WhatsApp");
+    }).catch(() => {
+      alert(text);
+    });
+  };
+
+  // Reiniciar todas las reservas
+  window.resetAllReservations = function() {
+    const promptConfirm = prompt('Para borrar TODAS las reservas escribe "BORRAR":');
+    if (promptConfirm === "BORRAR") {
+      savedReservations = {};
+      saveReservationsLocally({});
+      teams.forEach(t => {
+        t.isReserved = false;
+        t.manager = null;
+      });
+      renderAvailableColumn();
+      renderReservedColumn();
+      updateCounters();
+      showToast("Torneo reiniciado", "Todos los clubes están libres de nuevo");
+    }
+  };
+
+  // Renderizar Columna Izquierda (Equipos Disponibles)
+  function renderAvailableColumn() {
+    const availableTeams = teams.filter(t => !t.isReserved);
+    const filtered = availableTeams.filter(t => 
+      t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t.nickname.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    if (availableTeams.length === 0) {
+      availableContainer.innerHTML = `
+        <div class="p-8 rounded-lg bg-surface-container-low border-2 border-primary/50 text-center flex flex-col items-center justify-center gap-3">
+          <div class="w-16 h-16 rounded-full bg-primary/20 border border-primary flex items-center justify-center text-primary text-3xl">
+            <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          </div>
+          <h3 class="text-headline-md font-headline-md text-primary uppercase font-bold">¡TODOS LOS CUPOS COMPLETADOS!</h3>
+          <p class="text-body-md text-on-surface-variant max-w-md">
+            Los 20 clubes oficiales de la Serie A han sido reservados y asignados a sus respectivos mánagers en el Ledger oficial.
+          </p>
+          <button onclick="copyWhatsAppList()" class="mt-2 px-5 py-2.5 rounded bg-primary text-surface-container-lowest font-label-ticker uppercase font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">share</span> Compartir en WhatsApp
+          </button>
+        </div>
+      `;
+      return;
+    }
+
+    if (filtered.length === 0) {
+      availableContainer.innerHTML = `
+        <div class="p-8 rounded-lg bg-surface-container-low border border-outline-variant/30 text-center text-outline text-body-md">
+          No se encontraron clubes libres con el término "<span class="text-primary">${searchQuery}</span>".
+        </div>
+      `;
+      return;
+    }
+
+    availableContainer.innerHTML = filtered.map(t => {
+      const isSelecting = activeSelectingId === t.id;
+      return `
+        <div class="rounded-lg bg-surface-container-low border ${isSelecting ? 'border-primary ring-2 ring-primary/30 shadow-2xl' : 'border-outline-variant/40 hover:border-primary/60'} transition-all duration-200 overflow-hidden border-l-4 border-l-primary">
+          <!-- Cabecera / Info del Club -->
+          <div class="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 cursor-pointer" onclick="toggleSelectMode('${t.id}')">
+            <div class="flex items-center gap-4">
+              <!-- Crest SVG Nítido y Real -->
+              <div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center border border-white/10 p-1.5 shrink-0 shadow-lg">
+                ${t.crest}
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">${t.name}</h3>
+                  <span class="px-1.5 py-0.5 rounded text-[10px] font-label-micro font-bold bg-surface-container-highest text-primary border border-primary/30">TIER ${t.tier}</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-label-micro font-bold bg-primary text-surface-container-lowest animate-pulse">LIBRE</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-on-surface-variant mt-0.5">
+                  <span>${t.nickname}</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-secondary font-label-ticker font-semibold">${t.ovr} OVR</span>
+                  <span class="text-outline">•</span>
+                  <span class="text-primary font-bold text-xs flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span> Disponible
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botón de apertura -->
+            <button class="w-full sm:w-auto px-4 py-2 rounded ${isSelecting ? 'bg-surface-container-highest text-outline' : 'bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-bold shadow-md shadow-primary/20'} text-label-ticker font-label-ticker uppercase transition-all flex items-center justify-center gap-1 shrink-0">
+              <span class="material-symbols-outlined text-sm">${isSelecting ? 'close' : 'sports_esports'}</span>
+              ${isSelecting ? 'Cancelar' : 'Elegir Club'}
+            </button>
+          </div>
+
+          <!-- MODO SELECCIÓN EXPANDIBLE (Formulario de Reserva Inmediata) -->
+          ${isSelecting ? `
+            <div class="p-4 bg-surface-container-lowest/90 border-t border-primary/30 flex flex-col md:flex-row items-center gap-3 animate-toast" onclick="event.stopPropagation()">
+              <div class="relative flex-1 w-full">
+                <span class="material-symbols-outlined absolute left-3 top-2.5 text-primary text-lg">badge</span>
+                <input 
+                  id="manager-input-${t.id}"
+                  type="text" 
+                  maxlength="20"
+                  class="w-full bg-surface-container-low text-on-surface border border-primary rounded px-3 py-2 pl-9 text-body-md font-body-md placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" 
+                  placeholder="Escribe tu Nombre o Gamertag DLS..."
+                  onkeydown="if(event.key === 'Enter') confirmReservation('${t.id}')"
+                />
+              </div>
+              <button 
+                onclick="confirmReservation('${t.id}')"
+                class="w-full md:w-auto px-6 py-2.5 rounded bg-primary hover:bg-primary-fixed-dim text-surface-container-lowest font-label-ticker text-label-ticker uppercase font-bold shadow-lg shadow-primary/30 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 shrink-0">
+                <span class="material-symbols-outlined text-base font-bold">check_circle</span>
+                Confirmar Reserva
+              </button>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }).join("");
+  }
+
+  // Renderizar Columna Derecha (Equipos Reservados / Ledger Oficial)
+  function renderReservedColumn() {
+    const reservedTeams = teams.filter(t => t.isReserved);
+
+    if (reservedTeams.length === 0) {
+      reservedContainer.innerHTML = `
+        <div class="p-8 rounded-lg border-2 border-dashed border-outline-variant/40 bg-surface-container-lowest/50 text-center flex flex-col items-center justify-center gap-3 py-12">
+          <div class="w-14 h-14 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center text-outline/60">
+            <span class="material-symbols-outlined text-3xl">lock_clock</span>
+          </div>
+          <div>
+            <h4 class="text-title-sm font-title-sm font-bold text-on-surface uppercase tracking-wide">Aún no hay clubes reservados</h4>
+            <p class="text-body-sm font-body-sm text-on-surface-variant max-w-xs mt-1 leading-relaxed">
+              Elige un club en la columna izquierda, ingresa tu nickname de mánager y aparecerá aquí bloqueado en el Ledger Oficial.
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container text-label-micro text-primary uppercase font-mono tracking-wider border border-primary/20 mt-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> 20 CUPOS DISPONIBLES
+          </span>
+        </div>
+      `;
+      return;
+    }
+
+    // Botones de acción útiles en el encabezado del Ledger
+    const actionToolbar = `
+      <div class="flex items-center justify-between gap-2 mb-3 px-1">
+        <span class="text-label-micro text-outline uppercase font-mono">${reservedTeams.length} / 20 Bloqueados</span>
+        <div class="flex items-center gap-2">
+          <button onclick="copyWhatsAppList()" title="Copiar lista formateada para WhatsApp" class="px-2.5 py-1 text-xs rounded bg-surface-container hover:bg-surface-container-high text-primary border border-primary/30 flex items-center gap-1 transition-all font-mono">
+            <span class="material-symbols-outlined text-xs">share</span> Compartir
+          </button>
+          <button onclick="resetAllReservations()" title="Reiniciar todas las reservas" class="px-2 py-1 text-xs rounded bg-surface-container hover:bg-error-container/40 text-outline hover:text-error transition-all font-mono">
+            <span class="material-symbols-outlined text-xs">restart_alt</span>
+          </button>
+        </div>
+      </div>
+    `;
+
+    const cards = reservedTeams.map(t => {
+      const isJustReserved = t.id === newlyReservedId;
+      return `
+        <div class="p-3 rounded-lg bg-surface-container border ${isJustReserved ? 'border-primary just-reserved' : 'border-outline-variant/30'} flex items-center justify-between gap-3 transition-all hover:bg-surface-container-high/60 group">
+          <!-- Club & Escudo Real -->
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-white/10 p-1 shrink-0 flex items-center justify-center shadow">
+              ${t.crest}
+            </div>
+            <div class="truncate">
+              <div class="flex items-center gap-2">
+                <span class="font-title-sm font-bold text-xs uppercase text-on-surface truncate">${t.name}</span>
+                <span class="text-[9px] px-1 py-0.2 rounded font-bold font-mono bg-surface-container-lowest text-primary border border-primary/30 shrink-0">T-${t.tier}</span>
+              </div>
+              <!-- Badge Mánager Dueño -->
+              <div class="flex items-center gap-1.5 text-xs text-on-surface-variant font-mono mt-0.5">
+                <span class="material-symbols-outlined text-xs text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                <span class="text-primary font-semibold truncate">${t.manager || 'Oficial'}</span>
+                <span class="text-outline text-[10px]">• ${t.ovr} OVR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estado Bloqueado & Botón Liberar -->
+          <div class="shrink-0 flex items-center gap-1.5">
+            <span class="text-[10px] px-2 py-1 rounded bg-surface-container-lowest text-outline font-label-micro uppercase font-mono border border-outline-variant/40 flex items-center gap-1">
+              <span class="material-symbols-outlined text-xs text-error">lock</span> BLOQUEADO
+            </span>
+            <button 
+              onclick="cancelReservation('${t.id}')" 
+              title="Liberar este equipo" 
+              class="w-7 h-7 rounded bg-surface-container-lowest hover:bg-error-container text-outline hover:text-error flex items-center justify-center transition-all opacity-70 group-hover:opacity-100">
+              <span class="material-symbols-outlined text-xs">close</span>
+            </button>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    reservedContainer.innerHTML = actionToolbar + cards;
+  }
+
+  // Inicialización de Eventos y Render
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value;
+      renderAvailableColumn();
+    });
+  }
+
+  // Escuchar cambios de almacenamiento en otras pestañas del navegador
+  window.addEventListener("storage", (e) => {
+    if (e.key === STORAGE_KEY) {
+      savedReservations = loadSavedReservations();
+      teams = TEAMS_DATA.map(t => {
+        if (savedReservations[t.id]) {
+          return { ...t, isReserved: true, manager: savedReservations[t.id] };
+        }
+        return { ...t, isReserved: false, manager: null };
+      });
+      renderAvailableColumn();
+      renderReservedColumn();
+      updateCounters();
+    }
+  });
+
+  // Ejecución inicial con datos persistidos
+  renderAvailableColumn();
+  renderReservedColumn();
+  updateCounters();
+</script>
+
+</body></html>
